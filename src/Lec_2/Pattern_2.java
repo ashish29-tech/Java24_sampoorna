@@ -6,17 +6,17 @@ public class Pattern_2 {
 		// TODO Auto-generated method stub
 		int n = 5;
 		int row = 1;
-		int star = n;
+		int star = 1;
 		while(row<=n) {
 			int i = 1;
-			while(i<=row) { //counter ko row ke barabar kar diya...
-				System.out.print("* "); // i and row dono 1 hai toh first row m 1 star ayega
+			while(i<=star) { 
+				System.out.print("* ");
 				i++;
 			}
 			//next row
 			System.out.println();
-			System.out.println();
 			row++;
+			star++;
 		}
 		
 	}

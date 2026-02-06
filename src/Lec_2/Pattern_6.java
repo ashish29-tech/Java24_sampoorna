@@ -1,6 +1,6 @@
 package Lec_2;
 
-public class Pattern_5 {
+public class Pattern_6 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -24,7 +24,7 @@ public class Pattern_5 {
 			System.out.println();
 			row++;
 			star--;
-			space++;
+			space+=2; //space ko 2 se increase kar diya
 		}
 	}
 

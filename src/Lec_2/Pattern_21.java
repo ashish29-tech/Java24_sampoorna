@@ -7,7 +7,7 @@ public class Pattern_21 {
 		//maan ke chalte hai 1 star jyada hai last row m toh isse dono traf barabar star honge
 		//consider this pattern as a rectangle and it has length and height
 		//length in terms of n... 2*n-1 and for space 2*n-3
-		int n = 5;
+		int n = 5 ;
 		int row = 1;
 		int star = 1;
 		int space = 2*n-3;

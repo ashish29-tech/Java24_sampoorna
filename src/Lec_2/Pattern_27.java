@@ -24,7 +24,8 @@ public class Pattern_27 {
 			int val = 1;
 			while(j<=star) {
 				System.out.print(val + "\t");
-				if(j<=star/2) {
+				//mirror kab tak increase karega...star wali line se pehle tak increase karenge else kam karenge
+				if(j<=star/2) { //star/2+1 pe
 					val++;
 				}
 				else{

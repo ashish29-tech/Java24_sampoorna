@@ -23,8 +23,16 @@ public class Pattern_Rhombus {
 			}
 			//star
 			int j = 1;
+			int p = val;
 			while(j<=star) {
-				System.out.print(val+"\t");
+				System.out.print(p + "\t");
+				//mirror se pehle
+				if(j<=star/2) {
+					p++; //p ki value badhao
+				}
+				else {
+					p--; //wrna kam kar do
+				}
 				j++; 
 			}
 			//mirror

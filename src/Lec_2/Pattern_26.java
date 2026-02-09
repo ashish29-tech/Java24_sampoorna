@@ -11,15 +11,17 @@ public class Pattern_26 {
 		while (row <= n) {
 			int i = 1;
 			while (i <= space) {
-				System.out.print("  ");
+				System.out.print("\t");
 				i++;
 			}
 			int j = 1;
+			int val = 1; //val ko har row m 1 se start karna hai
 			while (j <= star) {
-				System.out.print(row + " ");
+				System.out.print(val + "\t");
 				j++;
+				val++;
 			}
-			// next row prep
+			// next row prep 
 			System.out.println();
 			row++;
 			space--;

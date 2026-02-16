@@ -23,7 +23,8 @@ public class Pattern_Rhombus {
 			}
 			//star
 			int j = 1;
-			int p = val;
+			//starting point milne ke baad vertical mirroring
+			int p = val; //p start point yaad kar rha hai...us p ko mirror wali line tak badhayenge and uske baad kam kar denge
 			while(j<=star) {
 				System.out.print(p + "\t");
 				//mirror se pehle

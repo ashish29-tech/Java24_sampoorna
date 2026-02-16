@@ -31,6 +31,24 @@ public class Check_Prime {
 			System.out.println("Prime");
 		}
 		
+		//by chatGPT
+//		int n = 6;
+//		boolean isPrime = true;
+//
+//		if(n <= 1) isPrime = false;
+//
+//		for(int i = 2; i * i <= n; i++) { //1st iteration m 2*2 check hoga then i 1 se badh jayega toh next time i*i hoga toh 3*3
+//		    if(n % i == 0) {
+//		        isPrime = false;
+//		        break;
+//		    }
+//		}
+//
+//		if(isPrime)
+//		    System.out.println("Prime");
+//		else
+//		    System.out.println("Not Prime");
+		
 	}
 
 }

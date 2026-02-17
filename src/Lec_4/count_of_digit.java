@@ -15,11 +15,10 @@ public class count_of_digit {
 		//better code cuz handles edge cases..cuz n can be 0 but still it
 		int n = 0;
 		int count = 0;
-		
 		if(n == 0) {
 			count = 1;
 //			count++;
-		}
+		} 
 		else {
 			while(n>0) {
 				n = n /10;

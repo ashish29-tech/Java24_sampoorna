@@ -13,15 +13,16 @@ public class Fibo {
 		//0th index pe a hai and 1st index pe b hai and we need to shift a and b
 		//0 1 1 2 3 5 8 13 21 34 55 89.... 0th a hai, 1st b hai, 2nd c hai..
 		//c = a + b nikal lenge...
-		//
-		
+		//sabse pehle a and b ka sum nikal lete hai and then a ko wha le jana hai jha pehle b tha
+		//and b ko wha rakh do jha c tha
+		//toh isse ye variables aage-aage shift ho rahe hai
 		int n = 6;
 		int a = 0;
 		int b = 1;
 		for(int i = 1; i<=n; i++) {
-			int c = a + b;
-			a = b;
-			b = c;
+			int c = a + b; //sabse pehle 0 + 1
+			a = b; //b m jo 1 hai use a m dal do 
+			b = c; //and c wala 1 b m chala gya
 		}
 		System.out.println(a);
 	}

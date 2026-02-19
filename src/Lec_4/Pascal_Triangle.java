@@ -13,7 +13,7 @@ public class Pascal_Triangle {
 		int row = 0;
 		while(row<n) { //row 0 hai and n 6 hai toh 5 tak chalega
 			//star
-			int i = 0;
+			int i = 1;
 			int ncr = 1; //har baar ncr ki value 1 lenge 
 			while(i<star) { //i bhi 0 se chalega cuz ncr formula m karna hai... row bhi zero se n tak
 				System.out.print(ncr+" "); //first time 1 print karenge

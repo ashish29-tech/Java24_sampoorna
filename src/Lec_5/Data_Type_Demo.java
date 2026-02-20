@@ -23,6 +23,7 @@ public class Data_Type_Demo {
 		long l = 7983748492l; //9 digit tak ka thik hai uske baad error dega. integer m maximum 9 digit tak ka number hi ata hai.
 		//ye upar m jitne numbers hai sare data type ke samne ise literal kehte hai  
 		//and is literal ka type integer
+		i = b; //yha bhi implicit typecasting 
 		byte b1 = 89;
 		Scanner sc = new Scanner(System.in);
 		b = sc.nextByte(); //byte ka input....

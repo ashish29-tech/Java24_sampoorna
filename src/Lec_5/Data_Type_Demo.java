@@ -20,7 +20,7 @@ public class Data_Type_Demo {
 		int i = 89; //i ka data type integer hai
 //		long l = 79; // l ka data type long hai
 		//literal ke last m l laga diya toh error hat jayega...literal ka typecase hoke long m ban gya
-		long l = 7983748492l; //9 digit tak ka thik hai uske baad error dega. integer m maximum 9 digit tak ka number hi ata hai.
+		long l = 7983748492l; //9 digit tak ka thik ha i uske baad error dega. integer m maximum 9 digit tak ka number hi ata hai.
 		//ye upar m jitne numbers hai sare data type ke samne ise literal kehte hai  
 		//and is literal ka type integer
 		i = b; //yha bhi implicit typecasting 
@@ -34,7 +34,13 @@ public class Data_Type_Demo {
 		System.out.println(s);
 		System.out.println(i);
 		System.out.println(l);
-
+		
+		int c = 2147483647;
+		System.out.println(c);
+		c++;
+		System.out.println(c);
+		int x = (int) (2147483647l); //integer ke range ke bhr hai isliye l lena pada...long bna ke typecast kar diya
+		System.out.println(x);
 	}
 
 }

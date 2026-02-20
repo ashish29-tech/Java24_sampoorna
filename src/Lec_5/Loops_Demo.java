@@ -19,9 +19,17 @@ public class Loops_Demo {
 //			}
 		
 		//ab 126 tak chalega
-		for(byte b = 0; b < 127; b++) {
-			System.out.println(b);
-		}
+//		for(byte b = 0; b < 127; b++) {
+//			System.out.println(b);
+//		}
+		
+//		int i = 32;
+		int i = 032; //decimal number 0 se start nahi hota hai....jab bhi kisi number ke aage 0 laga de toh uska base octal number m convert ho jayega
+		System.out.println(i);
+		
+		int x = 0689; //ye error cuz octal number m 0-7 ke beech ka digit hota hai
+		
+		
 		
 	}
 

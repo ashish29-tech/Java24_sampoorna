@@ -15,7 +15,7 @@ public class Data_Type_Demo {
 		
 		byte b = (byte) (420); //yha explicit typecasting
 		System.out.println(b);
-		short s = 67; //s ka data type short
+		short s = 67; //s ka data type short...yha bhi impicit typecasting
 		// int and long hi use hote hai
 		int i = 89; //i ka data type integer hai
 //		long l = 79; // l ka data type long hai

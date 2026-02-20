@@ -8,10 +8,10 @@ public class Bin_to_Dec {
 		int sum = 0;
 		int mul = 1;
 		while(n>0) {
-			int rem = n % 10;
+			int rem = n % 10; //division karte hai destination base se
 			sum = sum + rem*mul;
-			mul = mul * 2;
-			n = n / 10;
+			mul = mul * 2; //source se multiply
+			n = n / 10; //division karte hai destination base se
 		}
 		System.out.println(sum);
 	}

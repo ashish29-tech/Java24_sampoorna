@@ -19,6 +19,14 @@ public class Data_type_demo3 {
 		
 		char ch= 'a';
 		System.out.println((int)(ch)); //typecase kar ke print karenge toh uske corresponding ASCII value aa jayegi
+		
+		int i = 1;
+		i++; // i = (int)(i+1);....ye real m aise hota hai i++...typecasting hoti hai internally
+		System.out.println(i);
+		i += 1; //i = (int)(i+1);
+		//jha bhi assignment operator(+,-,*,/,%) use hote hai un sabme internal typecasting hoti hai
+		ch++; //ch = (char) (ch+1)...ye line aise chalegi....ch..a hai and ch+1 means 97+1 = 98 and typecast hua toh b ho jayeaga
+		System.out.println(ch); //cha ki value a hai..typecasting hogi toh b print hoga 
 	}	
 
 }

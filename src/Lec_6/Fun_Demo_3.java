@@ -1,13 +1,16 @@
 package Lec_6;
 
 public class Fun_Demo_3 {
-
+	
+	//Global variable ke sath static lagana padta hai. Ye Global variable can access any method.
+	static int val = 100; //Global variable. Class ke andar but kisi bhi method ke bhr banta hai.
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("Hello");
 		int a = 8;
 		int b = 7;
 		System.out.println(Add(b,a));
+		System.out.println(val);
 		System.out.println("Bye");
 	}
 	public static int Add(int a, int b) { //a =7 and b =8

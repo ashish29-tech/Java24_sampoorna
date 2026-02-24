@@ -18,7 +18,7 @@ public class Fun_Demo_3 {
 		int c = a+b; // 7+8
 		int val = 90; //Ye local variable hai, aur ye class(upar global) wale val ko overwrite nahi karta.
 //		val = val -5; // 90-5 = 85;
-		Fun_Demo_3.val = val-5; //agr global wala access karna hai toh...jo bhi class ka name hai use likh ke .(dot) kar ke
+		Fun_Demo_3.val = Fun_Demo_3.val-5; //agr global wala access karna hai toh...jo bhi class ka name hai use likh ke .(dot) kar ke
 		return c + Sub(c,a); //
 	}
 	

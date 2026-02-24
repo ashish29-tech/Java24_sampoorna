@@ -9,14 +9,16 @@ public class Fun_Demo_3 {
 		System.out.println("Hello");
 		int a = 8;
 		int b = 7;
-		System.out.println(val);
+		System.out.println(val); //upar global bnaya hua hai toh 100
 		System.out.println(Add(b,a));
-		System.out.println(val);
+		System.out.println(val); //niche m update ho gyi value...toh 95
 		System.out.println("Bye");
 	}
 	public static int Add(int a, int b) { //a =7 and b =8
 		int c = a+b; // 7+8
-		val = val -5;
+		int val = 90; //Ye local variable hai, aur ye class(upar global) wale val ko overwrite nahi karta.
+//		val = val -5; // 90-5 = 85;
+		Fun_Demo_3.val = val-5; //agr global wala access karna hai toh...jo bhi class ka name hai use likh ke .(dot) kar ke
 		return c + Sub(c,a); //
 	}
 	

@@ -28,7 +28,7 @@ public class Loops_Demo {
 		System.out.println(i);
 		
 		//octal number m 8 and 9 nahi hota hai
-		int x = 0689; //ye error cuz octal number m 0-7 ke beech ka digit hota hai
+//		int x = 0689; //ye error cuz octal number m 0-7 ke beech ka digit hota hai
 		
 		
 		

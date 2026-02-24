@@ -41,7 +41,6 @@ public class Data_Type_Demo {
 		System.out.println(c);
 		int x = (int) (2147483647l); //integer ke range ke bhr hai isliye l lena pada...long bna ke typecast kar diya
 		System.out.println(x);
-		System.out.println(x);
 	}
 
 }

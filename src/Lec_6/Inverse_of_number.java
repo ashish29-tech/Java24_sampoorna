@@ -16,7 +16,7 @@ public class Inverse_of_number {
 		int pos = 1;
 		while(n>0) { //jab tak number 0 na ho tab tak 
 			int rem = n % 10; //sabse pehle remiander nikal lenge
-			//upar remainder nikalne ke baad aage ki teeno lines ko kaise bhi aage-piche kar ke likh sakte hai
+			//upar remainder nikalne ke baad aage ki 2 lines ko kaise bhi aage-piche kar ke likh sakte hai but pos++ wali change nai hogi
 			//ab jo bhi sum tha us sum m 
 			// sum + position * 10 to the power remainder -1
 			sum = (int) (sum + pos * Math.pow(10, rem-1)); //typecasting karna padega cuz power double type ka hota hai

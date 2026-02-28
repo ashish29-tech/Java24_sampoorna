@@ -17,13 +17,16 @@ public class Shopping_game {
 			int aSum = 0;
 			int hSum = 0;
 			while(true) {
+				//Aayush phone
 				aSum = aSum + phone;
 				if(aSum > m) {
 					System.out.println("Harshit");
 					break;
 				}
+				//
 				phone++;
 				
+				//Harshit Phone
 				hSum = hSum + phone;
 				if(hSum > n) {
 					System.out.println("Aayush");

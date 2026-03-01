@@ -31,7 +31,7 @@ public class Is_Armstrong_Number {
 		
 	}
 	
-	//count of digit isliye bnaya gya taki help ho sake armstrong number nikalne ke liye
+	//count of digit isliye bnaya gya taki help ho sake armstrong number nikalne ke liye...
 	//koi number armstrong hai ya nahi ye check karne ke liye pehle pta karenge kitne digit ka number hai
 	//cuz hame digit ke power ka sum hi to add karna hai
 	//and return type int rakhna hoga cuz is result ko kahi na kahi use karna hai

@@ -3,7 +3,7 @@ package Lec_6;
 import java.util.Scanner;
 
 public class Chewbacca_and_Number {
-
+// 997878, 4545 ye input dal ke check karna hai console m
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
@@ -24,7 +24,7 @@ public class Chewbacca_and_Number {
 			else {
 				sum = sum + rem * mul;
 			}
-				mul = mul*10;
+				mul = mul*10; //first time ke liye multiplier 10 ho jayega and later 10 ki power increase hoti rahegi
 				n = n/10;
 		}
 //		single digit ke liye...agr number 9 hi bacha ya number 5 se chota tha

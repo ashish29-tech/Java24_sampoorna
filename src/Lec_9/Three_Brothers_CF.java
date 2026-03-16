@@ -12,9 +12,7 @@ public class Three_Brothers_CF {
 		int b = sc.nextInt();
 		ans(a,b);
 	}
-	
 	public static void ans(int a, int b) {
-		
 		int sum = a+b;
 		System.out.println(6-sum);
 	}

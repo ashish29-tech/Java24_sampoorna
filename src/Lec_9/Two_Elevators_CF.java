@@ -21,6 +21,7 @@ public class Two_Elevators_CF {
 	public static void ans(int a, int b, int c) {
 		
 //		Math.abs ek function hota hai...isme kuch bhi rakho wo hamesha +ve hi return karega
+//		a se 1 tak ka distance nikal raha hai....Ex: a = 5 → |5 - 1| = 4
 		int t1= Math.abs(a-1);
 		
 		int t2 = Math.abs(c-b); //pehle Math.abs nikalo and pehle wo c pe jayega

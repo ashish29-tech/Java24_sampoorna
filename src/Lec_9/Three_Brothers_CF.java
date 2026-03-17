@@ -3,7 +3,8 @@ package Lec_9;
 import java.util.Scanner;
 
 public class Three_Brothers_CF {
-
+// https://codeforces.com/problemset/problem/2010/B
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 //	https://codeforces.com/problemset/problem/2010/B

@@ -1,9 +1,10 @@
-package Lec_9;
+package TA_CF;
 
 import java.util.Scanner;
 
 public class Morning_CF {
-
+//	https://codeforces.com/problemset/problem/1883/A
+//	Solution by ChatGPT
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();

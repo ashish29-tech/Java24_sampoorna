@@ -1,4 +1,4 @@
-package Lec_9;
+package TA_CF;
 
 import java.util.Scanner;
 

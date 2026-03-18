@@ -31,6 +31,9 @@ public class Arrays_Demo {
 		System.out.println(arr[2]);
 		System.out.println(arr[3]);
 		System.out.println(arr[4]);
+		
+		int [] other = arr; //isse new array banega ? no. Earlier arr was pointing to 2k location now other will also be pointing.
+		System.out.println(other.length); //array ka length pta chalta hai...
 	}
 
 }

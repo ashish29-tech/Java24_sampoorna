@@ -13,6 +13,7 @@ public class Arrays_Demo {
 //		long [] arrraayy;
 //		char [] arrrayy;
 		
+		int arrey [] = new int[5]; //c style array declaration...ye c m likhte hai...ye sahi hai but niche wala tarika use karte hai usually
 		int [] arr = new int[5]; //integer ka array hai and 5 bucket wala chahiye
 		System.out.println(arr); //ek address print hua....[I@4617c264...I means integer ka array..bracket means 1D array...@ ye separator hai..baki hexadecimal hash code hai
 		System.out.println(Arrays.toString(arr)); //actual values....[0, 0, 0, 0, 0]

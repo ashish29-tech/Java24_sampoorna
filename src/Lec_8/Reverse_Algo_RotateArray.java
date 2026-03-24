@@ -16,13 +16,13 @@ public class Reverse_Algo_RotateArray {
 		int n = arr.length;
 		k = k%n;
 		//Reverse starting ke n-k element
-		Reverse(arr, 0, n-k-1);
+		Reverse(arr, 0, n-k-1); // n-k-1 = 7-3-1 = 3rd index....toh 0,1,2,3 index reverse ho gaye
 		
 		//last ke k element reverse
-		Reverse(arr, n-k, n-1);
+		Reverse(arr, n-k, n-1); //n-k means 7-3 = 4th index se se n-1 means 7-1 = 6th index tak reverse kar diya
 		
 		//all element reverse
-		Reverse(arr, 0, n-1);
+		Reverse(arr, 0, n-1); // n-1 = 7
 	}
 	
 	public static void Reverse(int arr [], int i, int j) {

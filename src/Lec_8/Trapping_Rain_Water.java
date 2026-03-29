@@ -14,7 +14,7 @@ public class Trapping_Rain_Water {
 //		Step 6: Return answer.....return sum;.......👉 Final total trapped water return
 //		
 		int [] arr = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
-		System.out.println(Trapping(arr));
+		System.out.println(Trapping(arr)); 
 	}
 	public static int Trapping(int []arr) { //arr = height array
 		//array ki length nikal lete hai

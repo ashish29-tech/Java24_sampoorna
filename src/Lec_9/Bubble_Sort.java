@@ -1,7 +1,9 @@
 package Lec_9;
 
 public class Bubble_Sort {
-
+//	When the algorithm runs:It repeatedly compares adjacent elements, Swaps them if they are in the wrong order,
+//	After each pass, the largest unsorted element “bubbles up” to the end
+//	Sabse pehle bada data shi hoga...then remaining m se shi hoga...and so on
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int [] arr = {4,5,3,2,1};

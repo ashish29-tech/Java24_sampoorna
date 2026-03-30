@@ -6,7 +6,7 @@ public class Bubble_Sort {
 		// TODO Auto-generated method stub
 		int [] arr = {4,5,3,2,1};
 		sort(arr);
-//		array display 
+//		array display
 		for(int i =0; i<arr.length; i++) {
 			System.out.print(arr[i] + " ");
 		}

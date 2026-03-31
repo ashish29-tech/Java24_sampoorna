@@ -1,6 +1,6 @@
 package Lec_9;
 
-public class Inserrion_Sort {
+public class Insertion_Sort {
 
 	public static void main(String[] args) {
 	    int[] arr = {1, 2, 7, 8, 9, 11, 4};

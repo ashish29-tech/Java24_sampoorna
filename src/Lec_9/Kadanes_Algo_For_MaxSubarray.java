@@ -7,15 +7,16 @@ public class Kadanes_Algo_For_MaxSubarray {
 		int [] arr = {-2,1,-3,4,-1,2,1,-5,4};
 		System.out.println(MaximumSum(arr));
 	}
+//	Declares a method that takes an integer array and returns an integer (the maximum subarray sum).
 	public static int MaximumSum(int[] arr) {
-		
-		int ans = Integer.MIN_VALUE;
-		int sum = 0;
-		for(int i = 0; i < arr.length; i++) {
-			
-			sum = sum + arr[i];
-			ans = Math.max(ans, sum); //First store the result
-//			Then reset
+//		Initialized to smallest possible integer to handle all-negative arrays.
+		int ans = Integer.MIN_VALUE; //ans -> stores the maximum sum found so far
+		int sum = 0; //stores the current subarray sum
+		for(int i = 0; i < arr.length; i++) { //Traverse each element of the array.
+//			i = 0....// 0 + (-2) = -2....then i = 1....sum = 0 + 1 = 1
+			sum = sum + arr[i]; //Add current element to the running sum (current subarray).
+			ans = Math.max(ans, sum); //First store the result...now compare...ans = max(-2147483648, -2) = -2....ans = max(-2, 1) = 1
+//			Then reset...sum negative hai → reset:
 			if(sum<0) { //if overall sum negative ho gya toh uske aage subarray ka start point...
 //				jab-jab subarray ka start point change hoga tab tab sum ko 0 
 				sum = 0;

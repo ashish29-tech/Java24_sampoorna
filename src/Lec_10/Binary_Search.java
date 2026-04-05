@@ -7,7 +7,6 @@ public class Binary_Search {
 		int [] arr = {2,3,4,5,7,9,11,13,14,15,18,20,21};
 		int item = 13;
 		System.out.println(Search(arr, item));
-		System.out.println(Search(arr, item));
 	}
 	public static int Search(int []arr, int item){ //ek array given hai and sath m element given hai
 		int lo = 0;

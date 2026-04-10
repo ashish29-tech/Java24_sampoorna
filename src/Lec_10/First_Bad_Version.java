@@ -1,4 +1,4 @@
-package Lec_9;
+package Lec_10;
 
 public class First_Bad_Version {
 //	Ye nahi chalega cuz hamare paas is bad version nahi hai...toh leetcode pe run karna hoga

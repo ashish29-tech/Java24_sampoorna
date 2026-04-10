@@ -1,4 +1,4 @@
-package Lec_9;
+package Lec_10;
 
 public class Kth_Root {
 

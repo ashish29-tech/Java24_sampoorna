@@ -32,7 +32,7 @@ public class Search_in_Rotated_Sorted_Array {
 				}
 			}
 			else { //lower line pe hai
-				if(item<=arr[hi] && arr[mid]<item) { //right se chota and mid se bada hoga item
+				if(item<=arr[hi] && arr[mid]<item){ //right se chota and mid se bada hoga item
 					lo = mid+1;
 				}
 				else {

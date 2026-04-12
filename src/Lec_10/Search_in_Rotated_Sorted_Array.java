@@ -35,7 +35,7 @@ public class Search_in_Rotated_Sorted_Array {
 				if(item<=arr[hi] && arr[mid]<item){ //right se chota and mid se bada hoga item
 					lo = mid+1;
 				}
-				else {
+				else{
 					hi = mid-1;
 				}
 				

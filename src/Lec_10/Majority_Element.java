@@ -23,7 +23,7 @@ public class Majority_Element {
 				vote--; //vote kaat do
 				if(vote == 0) { //if vote ki value 0 ho gayi 
 					e = arr[i]; // current element ko majority element maan lo
-					vote = 1; //vote ki value 1 kar denge
+					vote = 1; //vote ki value 1 kar denge cuz khud ko majority maan liya
 				}
 			}
 		}

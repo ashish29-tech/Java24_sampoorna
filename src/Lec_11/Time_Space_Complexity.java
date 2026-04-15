@@ -32,6 +32,18 @@ public class Time_Space_Complexity {
 //		Arithmetic (+, -, *, /) → O(1)
 //		Comparison (>, <, ==) → O(1)
 //		Constant time means: Execution does NOT grow with input size n
+		
+//		Question: Kitni complexity ayegi ? 
+//		
+		int n = 566789;
+		int i = 0;
+//		loop 0 se leke n-1 time means n times tak chal rha hai...
+//		Toh O(N) order of N
+		while(i<n) {
+			System.out.println("Hey"); //ye constant
+			
+			i++; //ye bhi constant
+		}
 	}
 
 }

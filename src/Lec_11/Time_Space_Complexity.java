@@ -41,6 +41,7 @@ public class Time_Space_Complexity {
 //		Toh O(N) order of N
 		while(i<n) {
 			System.out.println("Hey"); //ye constant
+			System.out.println("Ashish Here");
 			
 			i++; //ye bhi constant
 		}

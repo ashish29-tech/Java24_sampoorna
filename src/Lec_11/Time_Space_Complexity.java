@@ -35,16 +35,28 @@ public class Time_Space_Complexity {
 		
 //		Question: Kitni complexity ayegi ? 
 //		
+//		int n = 566789;
+//		int i = 0;
+////		loop 0 se leke n-1 time means n times tak chal rha hai...
+////		Toh O(N) order of N
+//		while(i<n) {
+//			System.out.println("Hey"); //ye constant
+//			
+//			i++; //ye bhi constant
+//		}
+		
+//		Ye binary search ka loop hai...
+//		i...ye counter multiply ya divide se change ho rha hoga toh uski complexity
+//		log m jayegi...ans base wo hoga jisse multiply ya divide kar rahe hai
+//		O(Log(N)) base 2
 		int n = 566789;
-		int i = 0;
-//		loop 0 se leke n-1 time means n times tak chal rha hai...
-//		Toh O(N) order of N
-		while(i<n) {
-			System.out.println("Hey"); //ye constant
-			System.out.println("Ashish Here");
+		int i = 1;
+		while(i<=n) {
+			System.out.println("Heya");
 			
-			i++; //ye bhi constant
+			i *= 2;
 		}
+			
 	}
 
 }

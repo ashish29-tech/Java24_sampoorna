@@ -59,9 +59,20 @@ public class Time_Space_Complexity {
 		
 //		Ye bhi binary search hai
 //		O(Log(N)) base 2....cuz divide ho rha hai
-		while(n>0) {
-			System.out.println("Heyyy Baby");
-			n /= 2;
+//		while(n>0) {
+//			System.out.println("Heyyy Baby");
+//			n /= 2;
+//		}
+		
+		
+//		har baar add kar rahe hai....If 100 tak jana hai toh...0, 5, 10, 15, 20...toh n/5
+//		n/5 ko likhenge... order of n O(N)
+//		jab bhi +/- ho rha ho toh linear time...O(N) order of n
+		while(i<=n) {
+			System.out.println("Hiee");
+			
+			i+=2;
+			i+=3;
 		}
 	}
 

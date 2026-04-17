@@ -68,11 +68,22 @@ public class Time_Space_Complexity {
 //		har baar add kar rahe hai....If 100 tak jana hai toh...0, 5, 10, 15, 20...toh n/5
 //		n/5 ko likhenge... order of n O(N)
 //		jab bhi +/- ho rha ho toh linear time...O(N) order of n
+//		while(i<=n) {
+//			System.out.println("Hiee");
+//			
+//			i+=2;
+//			i+=3;
+//		}
+		
+//		log n base 6 cuz 6 se multiply kar rahe hai na
+//		O(Log(N)) base 6
+//		i ki value pehle 1..i=1... hai phir 6 kar rahe hai...i=6...phir i= 6^2 then i= 6^3
+//		6^k = N...
 		while(i<=n) {
-			System.out.println("Hiee");
+			System.out.println("Hey");
 			
-			i+=2;
-			i+=3;
+			i *=2;
+			i *=3;
 		}
 	}
 

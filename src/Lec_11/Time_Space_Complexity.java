@@ -56,7 +56,13 @@ public class Time_Space_Complexity {
 			
 			i *= 2;
 		}
-			
+		
+//		Ye bhi binary search hai
+//		O(Log(N)) base 2....cuz divide ho rha hai
+		while(n>0) {
+			System.out.println("Heyyy Baby");
+			n /= 2;
+		}
 	}
 
 }

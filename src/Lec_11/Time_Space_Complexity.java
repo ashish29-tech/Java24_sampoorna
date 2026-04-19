@@ -79,11 +79,33 @@ public class Time_Space_Complexity {
 //		O(Log(N)) base 6
 //		i ki value pehle 1..i=1... hai phir 6 kar rahe hai...i=6...phir i= 6^2 then i= 6^3
 //		6^k = N...
-		while(i<=n) {
+//		while(i<=n) {
+//			System.out.println("Hey");
+//			
+//			i *=2;
+//			i *=3;
+//		}
+		
+		
+//		
+//		O(Log(N)) base 6
+//		while(n>0) {
+//			System.out.println("Heya");
+//			
+//			n /= 2;
+//			n /= 3;
+//		}
+		
+		
+//		Jab add kar rahe hai toh loop kitni baar chala hoga...? N/K times...K kuch bhi ho skata hai..
+//		O(N/K) .... O(n)
+		int k = 2;
+		while(i<=n) { 
 			System.out.println("Hey");
-			
-			i *=2;
-			i *=3;
+//			Har iteration mein:i=i+2
+//			Matlab i linearly badh raha hai (step size 2 ke saath)
+//			Even though i += 2 (2 se jump ho raha hai)...still Ye linear growth hai, exponential nahi
+			i+=k;
 		}
 	}
 

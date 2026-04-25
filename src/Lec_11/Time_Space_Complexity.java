@@ -102,6 +102,7 @@ public class Time_Space_Complexity {
 		int k = 2;
 		while(i<=n) { 
 			System.out.println("Hey");
+			System.out.println("Hey");
 //			Har iteration mein:i=i+2
 //			Matlab i linearly badh raha hai (step size 2 ke saath)
 //			Even though i += 2 (2 se jump ho raha hai)...still Ye linear growth hai, exponential nahi

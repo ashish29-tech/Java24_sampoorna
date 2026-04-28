@@ -58,7 +58,10 @@ public class Time_Space_Complexity {
 		}
 		
 //		Ye bhi binary search hai
+
 //		O(Log(N)) base 2....log n base 2.....cuz divide ho rha hai
+//		O(Log(N)) base 2....cuz divide ho rha hai
+
 //		while(n>0) {
 //			System.out.println("Heyyy Baby");
 //			n /= 2;
@@ -66,7 +69,11 @@ public class Time_Space_Complexity {
 		
 		
 //		har baar add kar rahe hai....If 100 tak jana hai toh...0, 5, 10, 15, 20...toh n/5
+
 //		n/5 ko likhenge... order of n O(N)/linear time
+
+//		n/5 ko likhenge... order of n O(N)
+
 //		jab bhi +/- ho rha ho toh linear time...O(N) order of n
 //		while(i<=n) {
 //			System.out.println("Hiee");
@@ -100,6 +107,7 @@ public class Time_Space_Complexity {
 //		Jab add kar rahe hai toh loop kitni baar chala hoga...? N/K times...K kuch bhi ho skata hai..
 //		O(N/K) .... O(n)
 		int k = 2;
+		i = 1;
 		while(i<=n) { 
 			System.out.println("Hey");
 //			Har iteration mein:i=i+2
@@ -107,9 +115,10 @@ public class Time_Space_Complexity {
 //			Even though i += 2 (2 se jump ho raha hai)...still Ye linear growth hai, exponential nahi
 			i+=k;
 		}
-		
+
+		i =1;
 		while(i <= n) {
-			System.err.println("Hiee");
+			System.out.println("Hiee");
 //			O(Log(N)) base K.....jab into karenge toh log m jayega usme base k hoga
 			i*=k;
 //			Agr k user input hai toh..toh n/k. Agr k fixed hai toh n kahenge.

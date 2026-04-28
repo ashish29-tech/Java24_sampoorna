@@ -184,6 +184,13 @@ public class Time_Space_Complexity {
 			}
 		}
 		
+//		(O(N^2))
+		for(i =1; i<=n; i++) { //outer loop runs n times.
+			for(int j=i; j<=n; j++) {
+				System.out.println("hey");
+			}
+		}
+		
 	}
 
 }

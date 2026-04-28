@@ -156,6 +156,8 @@ public class Time_Space_Complexity {
 			System.out.println("hey");
 		}
 		
+//		
+//		O(N^4)
 		for(i = 1; i<=n; i++) {
 			for(int j = 1; j<= i*i; j++) {
 				for(k=1; k<=n/2; k++) {
@@ -163,6 +165,11 @@ public class Time_Space_Complexity {
 				}
 			}
 		}
+		
+		for(i =1; i<= n; i *=2) {
+			System.out.println("Hey");
+		}
+		
 	}
 
 }

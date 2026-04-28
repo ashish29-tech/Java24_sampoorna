@@ -155,6 +155,14 @@ public class Time_Space_Complexity {
 		for(i = 1; i * i <=n; i++) {
 			System.out.println("hey");
 		}
+		
+		for(i = 1; i<=n; i++) {
+			for(int j = 1; j<= i*i; j++) {
+				for(k=1; k<=n/2; k++) {
+					System.out.println("hiee");
+				}
+			}
+		}
 	}
 
 }

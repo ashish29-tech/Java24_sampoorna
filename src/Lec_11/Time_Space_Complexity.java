@@ -166,8 +166,22 @@ public class Time_Space_Complexity {
 			}
 		}
 		
+		
+//		O(log n)
 		for(i =1; i<= n; i *=2) {
 			System.out.println("Hey");
+		}
+		
+//		n * n * log n = O((n^2) log n)
+//		outer wala n/2 times chal rha, middle wala bhi n/2 and inner wala log n times...
+//		so n/2 * n/2 * log(n)
+//		n^2 log n
+		for(i = n/2; i<=n; i++) { //n
+			for(int j = 1; j<=n/2; j++) { //n
+				for(k = 1; k<=n; k= k*2) { // log n
+					System.out.println("heya"); //ye kaam constant
+				}
+			}
 		}
 		
 	}

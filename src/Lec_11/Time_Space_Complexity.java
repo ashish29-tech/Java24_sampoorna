@@ -191,7 +191,7 @@ public class Time_Space_Complexity {
 			}
 		}
 		
-//		
+//		O((N) log(n)) 
 		for(i =1; i<=n; i++) { //outer loop runs n times
 			for(int j = 1; j <= n; j+=i) { //Step size is i. So number of iterations = n / i
 				System.out.println("heya");

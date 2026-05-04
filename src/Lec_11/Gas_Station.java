@@ -22,19 +22,19 @@ public class Gas_Station {
 			return -1;
 		}
 //		answer hoga uske liye handle
-		int sum = 0, idx = 0; //kon se index se start karna hai journey 0th index se
-		for(int i = 0; i < cost.length; i++) {
-			sum+= gas[i] - cost[i]; //
+		int sum = 0, idx = 0; // kon se index se start karna hai journey 0th index se
+		for (int i = 0; i < cost.length; i++) {
+			sum += gas[i] - cost[i]; //
 //			agr ye sum negative nahi hai toh jisko start mana hai wahi start hoga
-			if(sum<0) {
+			if (sum < 0) {
 //				agr hai 0 se kam toh 
-				idx = i+1; //idx m yaad kar liya i+1
-				sum = 0; //sum ko o kar do
+				idx = i + 1; // idx m yaad kar liya i+1
+				sum = 0; // sum ko o kar do
 //			question gives us unique answer isliye ham 4 and 5 ko try bhi nahi kar rahe
 			}
 		}
-		return idx; 
-		
+		return idx;
+
 	}
 
 }

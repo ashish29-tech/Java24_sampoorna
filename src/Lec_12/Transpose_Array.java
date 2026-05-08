@@ -21,11 +21,12 @@ public class Transpose_Array {
 		}
 	}
 	public static void Transpose(int[][] arr) {
+//		i represent karta hai row index.
 		for(int i = 0; i<arr.length; i++) { //row ka loop 0 start ho rha toh 
 			for(int j = i+1; j<arr[0].length; j++) { //column ka loop uske just 1 aage se start hoga
 //				i,j ko swap karna hai...j,i se
 				int temp = arr[i][j];
-				arr[i][j] = arr[j][i]; 
+				arr[i][j] = arr[j][i]; //i=0, j=1
 				arr[j][i] = temp; //arr of j,i pe temp rakh denge
 			}
 		}

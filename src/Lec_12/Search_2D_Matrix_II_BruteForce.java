@@ -18,6 +18,8 @@ public class Search_2D_Matrix_II_BruteForce {
 //        boolean ans = searchMatrix(matrix, target);
 //        System.out.println(ans);
         System.out.println(searchMatrix(matrix, target));
+        System.out.println(searchMatrix(matrix, target));
+        
 
     }
 //    Why [0] specifically?

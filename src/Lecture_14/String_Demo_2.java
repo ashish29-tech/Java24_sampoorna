@@ -8,6 +8,7 @@ public class String_Demo_2 {
 		System.out.println(s + 10 + 40 + "bye"); //string m koi bhi data type(int,char,boolean,float,double,long) add kare toh use string ki trah lega...
 		System.out.println(10 + 40 + s + "bye"); //pehle int + int hoga
 		System.out.println(s + (10+40) + "bye"); //evaluate hoga bracket
+		System.out.println(s + (100+40) + "bye");
 //		string ki length
 //		yha .length ke sath() laga hai toh ye method hai..
 		System.out.println(s.length()); //string ka naam .(dot) length se string ki length

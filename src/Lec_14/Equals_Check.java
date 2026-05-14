@@ -6,7 +6,7 @@ public class Equals_Check {
 		// TODO Auto-generated method stub
 		String s1 = "Hello";
 		String s2 = new String("Hello");
-//		System.out.println(s1==s2);
+		System.out.println(s1==s2);
 //		Dono string ka content compare ho...
 //		System.out.println(s1.equals(s2)); //we'll use equals method..to compate strings ke content ko
 		System.out.println(isequal(s1,s2));

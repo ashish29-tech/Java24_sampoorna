@@ -16,7 +16,7 @@ public class String_Demo_2 {
 		System.out.println(arr.length); //yha bracket nai laga hai but string m .length() m bracket laga hai...yha array class m ek variable hai length
 //		string ke kisi index ka character janna ho toh...
 //		string pe 0 based indexing hoti hai
-		System.out.println(s.charAt(2));
+		System.out.println(s.charAt(2)); //2nd index ka character aya
 	}	
 
 }

@@ -1,4 +1,4 @@
-package Lecture_14;
+package Lec_14;
 
 public class String_Demo_1 {
 

@@ -12,16 +12,16 @@ public class Check_Visited {
 		visited[3] = true;
 		visited[1] = true;
 		visited[4] = true;
-		System.out.println(isVisited(visited, 2, 5)); //2 se 5 ke beech m check karenge..
+		System.out.println(isVisited(visited, 2, 5)); //2 se 5 ke beech m check karenge....toh 3 and 4 index pe true rakha hua toh false ayega answer
 	}
 //	i se j tak ka loop chala denge kahi true mil gya toh return false nahi mila toh return true
 	public static boolean isVisited(boolean [] visited, int i, int j) { //array pass kar diya and sath m 2 index pass
-		for(int k = i; k<=j; k++) { //i se start karenge and j tak chalayenge
+		for(int k = i; k<=j; k++) { //i se start karenge and j tak chalayenge.....2 se start hoga...2nd index pe true nahi toh aage badh jayega then 3rd check...yha true hai toh yahi se return toh false ayeaga
 			if(visited[k] == true) {
 				return false;
 			}
 		}
-		return true; // loop se bhr aa gaye toh mtlb safe hai...
+		return true; // loop se bhr aa gaye toh mtlb safe hai...mtlb pura chal gya and true nahi mila toh thik hai
 	}
 
 }

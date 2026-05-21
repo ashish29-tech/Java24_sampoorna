@@ -56,7 +56,7 @@ public class Finding_CB_Numbers {
 	public static boolean IscbNumber(long num) { //num pass kiya
 //		check ye tha ki agr ye number 0 ya 1 hai toh cb number nahi hoga
 		if(num == 0 || num ==1) {
-			return false;
+			return false; 
 		}
 		int [] arr = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29}; //array m store kar liya
 		for(int i = 0; i<arr.length; i++) { //arr pe loop laga diya. size 10 hai array ka toh 0-9 jayega isliye = nahi lagaya condition m

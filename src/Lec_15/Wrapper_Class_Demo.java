@@ -43,6 +43,28 @@ public class Wrapper_Class_Demo {
 		Integer b4 = 190;
 		System.out.println(b1==b2); //true
 		System.out.println(b3==b4); //false
+		
+		Boolean c1 = true;
+		Boolean c2 = true;
+		System.out.println(c1==c2); //true. Means dono same address pe ban rahe hai.
+		
+		Character ch1 = 'a';
+		Character ch2 = 'a';
+		System.out.println(ch1==ch2); //true. cuz range m hai...byte wali range m hai.
+		
+		Character ch3 = '€';
+		Character ch4 = '€';
+		System.out.println(ch3==ch4); //ASCII value 127 se upar hai toh false
+		System.out.println((int) ('€')); //ASCII value print...
+		
+		Character ch5 = 'ÿ';
+		Character ch6 = 'ÿ';
+		System.out.println(ch5==ch6); //ASCII value 127 se upar hai toh false
+		System.out.println((int) ('ÿ'));
+		
+//		Character m 127 ke baad duplicate ayega...boolean m true false always shi mana jayega...
+//		baki charo data type int,short, byte, long...inme -128 to 127 ka data hoga toh true isse upar ka toh false.
+//		float and double m aisa koi concept hota nahi hai.
 	}
 
 }

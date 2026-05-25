@@ -25,12 +25,15 @@ public class ArrayList_Demo_2 {
 		System.out.println(); //line change
 		
 //		ek hota hai for each loop ye Array and ArrayList dono pe lagta hai
+//		for each reverse nahi chalta hai..ye forward chalta hai...isme koi indexing ka chakkar nahi hota..
+//		ye tab tak chalta hai jab tak array ya ArrayList m data hoga..and isme content assign hota hau index assign nahi hota..
+//		ye loop wha jyada kaam ata hai jha indexing nahi hota..
 		int [] arr = {2,3,5,1,4,11,40,51,1,15}; //array bna liya
 //		ek baar array pe lagayenge loop and ek baar ArrayList pe
-		for(int v :arr) { // : kar ke array ka naam...array m data integer ka hai toh integer variable bna liya
+		for(int v :arr) { // : kar ke array(arr) ka naam...array m data integer ka hai toh integer variable bna liya
 			System.out.println(v+" "); //value read karega
 		}
-		System.out.println();
+		System.out.println();//line change
 		for(int v:ll) { //integer variable bna liya
 			System.out.println(v+" ");
 		}

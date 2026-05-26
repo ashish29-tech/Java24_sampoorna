@@ -24,7 +24,7 @@ public class ArayList_Demo_3 {
 //		current capacity 10 now we'll try to add 7. So multiply by 1.5 so... 10 * 1.5 = 15
 //		15 size array will be created...and all data will be copied by java...and 7 will be 
 //		added. Now new array will be remembered by java.
-//		so remember 1.5 se grow karta hai..
+//		so remember array ki default capacity hoti hai 10...and 1.5 se grow karta hai..
 		ll.add(7);
 		System.out.println(ll);
 		 

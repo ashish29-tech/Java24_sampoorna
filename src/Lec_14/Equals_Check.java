@@ -8,7 +8,7 @@ public class Equals_Check {
 		String s2 = new String("Hello");
 		System.out.println(s1==s2);
 //		Dono string ka content compare ho...
-//		System.out.println(s1.equals(s2)); //we'll use equals method..to compate strings ke content ko
+//		System.out.println(s1.equals(s2)); //we'll use equals method..to compare strings ke content ko
 		System.out.println(isequal(s1,s2));
 	}
 //	interview m they can ask khud ka method likh ke check karo ki 2 strings equal hai ya nahi

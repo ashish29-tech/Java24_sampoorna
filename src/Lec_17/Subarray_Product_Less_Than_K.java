@@ -1,7 +1,8 @@
 package Lec_17;
 
 public class Subarray_Product_Less_Than_K {
-
+//https://leetcode.com/problems/subarray-product-less-than-k/submissions/
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int [] arr = {1, 2, 3, 4, 2, 1};
@@ -12,7 +13,7 @@ public class Subarray_Product_Less_Than_K {
 		int p = 1; //product ki value 1 li beginning m cuz 0 lenge toh product 0 ho jayega...
 		int ans = 0;
 		int si=0, ei=0; //start and end 0th index pe hai...
-		while(ei<arr.length) {
+		while(ei<arr.length) { //array ke har element pe jana...
 			//grow
 			p= p*arr[ei];
 			//shrink

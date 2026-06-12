@@ -3,7 +3,7 @@ package Arrays_Assinmt;
 import java.util.Scanner;
 
 public class Calculate_The_Sum {
-
+//	https://codeskiller.codingblocks.com/problems/61
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);

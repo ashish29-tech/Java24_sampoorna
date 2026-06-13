@@ -18,6 +18,7 @@ public class Power {
 		
 //		smaller problem
 //		suppose 3^10 nikalni hai and koi 3*9 la ke dede toh toh we'll just multiply by 3 to get 3*10.
+//		Ye bhi head recursion cuz recursive call ke baad bhi kaam ho rha hai toh head recursion.
 		int power = pow(a, n-1); //recursion bhai a ki power n-1 la ke dede
 		return power*a;
 	}

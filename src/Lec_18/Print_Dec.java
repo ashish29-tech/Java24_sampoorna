@@ -19,6 +19,7 @@ public class Print_Dec {
 //	pehle khud ko print kar dete hai...
 		System.out.println(n);
 //		baki recursion print kar de...
+//		Ye tail recursion cuz last statement recursive call hai and iske baad koi kaam nahi ho raha
 		PD(n-1);
 	}
 

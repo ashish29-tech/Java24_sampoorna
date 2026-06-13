@@ -1,6 +1,6 @@
 package Lec_18;
 
-public class Fast_Occ {
+public class First_Occ {
 //	Array given hai pta karna hai 4 pehli baar kon se index pe aya tha
 //	Ek toh linear search...loop laga denge jaise 4 mil gya return kar denge...if pure array m nahi hoga toh -1 return
 	public static void main(String[] args) {

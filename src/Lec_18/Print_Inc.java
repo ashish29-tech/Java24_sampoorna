@@ -13,7 +13,7 @@ public class Print_Inc {
 			return ;
 		}
 		
-//		
+//		Ye head recursion hai cuz last statement recursive call ke baad bhi niche kaam ho rha hai
 		PI(n-1);
 		System.out.println(n); 
 	}

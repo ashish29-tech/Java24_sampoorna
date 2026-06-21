@@ -5,7 +5,7 @@ public class Permutation_2_Duplica {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 //		isme duplicate aa rahe hai...duplicate rokna hai hame...
-		String ques = "abca"; 
+		String ques = "abcaa"; 
 		Print(ques, "");
 	}
 
@@ -13,7 +13,7 @@ public class Permutation_2_Duplica {
 		if(ques.length() == 0) {
 			System.out.println(ans);
 			return; 
-		}
+		} 
 //		jitni ques ki length utni choice
 		for(int i = 0; i<ques.length(); i++) { //first time ye i = 0 ke liye chalega
 //			har level pe jiska call laga rahe hai us index ke aage ke...i+1 se leke...pure string m same character nahi hona chahiye...tab call jaye

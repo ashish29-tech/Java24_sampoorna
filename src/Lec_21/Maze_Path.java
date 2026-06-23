@@ -18,7 +18,7 @@ public class Maze_Path {
 		}
 //		boundary jab paar kar jayega toh wapis ana hoga
 		if(cr>er || cc>ec) {
-			return;
+			return; 
 		}
 		PrintPath(cr, cc+1, er, ec, ans + "H"); //agr pehle horizontal call lagayenge toh col m +1 kar denge and string m H add kar denge
 		PrintPath(cr+1, cc, er, ec, ans + "V"); //agr vertical call lagayenge...row m +1 and and m V add

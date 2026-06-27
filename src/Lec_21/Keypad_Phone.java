@@ -6,7 +6,7 @@ public class Keypad_Phone {
 //	10 size ka array bna diya....0-9 tak ki indexing..har key pe kya string likha hai uspe ek index se map kar diya...
 //	0 and 1 pe kuch nahi toh blank chor diya...2 pe abc and so on. Ek static array bna liya jise ham direct use kar lenge.
 //	Kon se button pe kya likha hai ye info aa gya
-	static String[] key = {"", "", "abc", "def", "jkl", "mno", "pqrs", "tuv", "wxyz" };
+	static String[] key = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz" };
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 //		suppose 234 hai 3 button hai...pehle 0th button ke bare m sochna hai..0 ke corresponding character nikalenge...2 ayega...

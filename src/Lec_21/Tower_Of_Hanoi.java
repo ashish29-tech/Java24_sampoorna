@@ -5,7 +5,7 @@ public class Tower_Of_Hanoi {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String src = "A";
+		String src = "W";
 		String help = "B";
 		String des = "C";
 		int n = 3;

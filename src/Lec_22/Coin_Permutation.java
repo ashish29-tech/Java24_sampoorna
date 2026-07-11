@@ -1,4 +1,4 @@
-package Lec_21;
+package Lec_22;
 
 public class Coin_Permutation {
 //Approach: Coin wale array pe loop laga dena hai...jaise boardpath m ham loop laga rahe the. 

@@ -1,4 +1,4 @@
-package Lec_21;
+package Lec_22;
 
 public class Queen_Combination {
 

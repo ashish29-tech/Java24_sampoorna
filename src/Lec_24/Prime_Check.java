@@ -17,6 +17,6 @@ public class Prime_Check {
 			i++;
 		}
 //		loop se bahar nikal ke kahenge 
-		return true;//If no divisor is found, return true.
+		return true;//If no divisor is found, return true. Mtlb prime no. hai. 
 	}
 }

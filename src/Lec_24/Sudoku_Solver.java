@@ -1,6 +1,6 @@
 package Lec_24;
 
-public class Sudoku_Solver {
+public class Sudoku_Solver { 
 //	leetcode m character m karna hai and monu bhaiya int m karwa rahe hai
 //	leetcode ke liye integer ko character banana hai...
 //	https://leetcode.com/problems/sudoku-solver/description/

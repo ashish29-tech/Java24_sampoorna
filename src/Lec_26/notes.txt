@@ -1,0 +1,88 @@
+Recursion time complexity
+
+Time Complexity — Quick Notes
+Big-O batata hai ki input size n badhne par algorithm ka time/work kitni rate se badhta hai.
+Basic Rule
+Har recursive call mein agar constant work = O(1) ho:
+n calls → O(n)
+n² calls → O(n²)
+Recursion mein kaise nikalna hai?
+Kitni recursive calls ho rahi hain?
+Har call mein kitna kaam ho raha hai?
+Dono ko multiply karo.
+Number of calls × Work per call
+
+Tumhare examples
+
+First Occurrence
+
+Maximum n recursive calls
+Har call mein O(1) comparison
+Time = O(n)
+
+Factorial — Head Recursion
+
+return n * fact(n-1);
+
+n calls
+Har call mein O(1) multiplication
+Time = O(n)
+
+Factorial — Tail Recursion
+
+return fact(n-1, ans*n);
+
+n calls
+Har call mein O(1) multiplication
+Time = O(n)
+
+Print Decreasing
+
+System.out.println(n);
+PD(n-1);
+
+n calls
+Har call mein O(1) printing/work
+Time = O(n)
+n + 1 ka kya?
+
+Agar exact calls:
+
+n + 1
+
+
+hain, toh:
+
+O(n + 1) = O(n)
+
+
+Big-O mein constant/lower-order terms ignore karte hain.
+
+Golden Formula 🔥
+
+Recursive calls ki quantity × har call ka work = Time Complexity
+
+Example:
+
+n × O(1) = O(n)
+
+
+Bas abhi ke liye ye formula pakad lo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

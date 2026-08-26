@@ -1,6 +1,9 @@
 package Lec_18;
 
 public class Power {
+//	Iski complexity: n → n-1 → n-2 → n-3 → ... → 0....Ek-ek karke decrease ho raha hai.
+//	So: n calls × O(1) work =  O(n)
+//	O(log n) kaise laayein? 
 //	a and n are given. a ki power n nikalni hai.
 //	ek tarika...loop laga denge...a ko n times multiply kar denge baat ban jayegi...
 	public static void main(String[] args) {

@@ -71,13 +71,34 @@ Bas abhi ke liye ye formula pakad lo.
 
 
 
+----------------------------------------------------------------------------
+Recurrence Relation time nikalne ka function hota hai 
+like factorial wale code m...lec-18 wala
+
+Refer notes:
+Ek virtual function hoga T usme n paas karenge toh wo factorial nikalne ka time de dega
+T(n) time lagega...
+T(n) ki dependency kispe hogi ? n-1 toh.....T(n-1)...factorial n-1 nikalne m 
+kitna time lag rha hai + kuch constant work kar rahe hai like 2 no. multiply kar rahe hai ya base check kar rahe hai 
+
+T(n) = T(n-1) + 1; ....isi ko bolte hai recurrence relation...time ka function bna diya....ki factorial n nikalne m kitna time lagega...toh jitna time n-1 nikalne m lagega + kuch constant work
+Isi ko solve kar ke T(n) = n ka term lana hai....taki ham time complexity bta paye 
+
+public static int fact(int n) {
+		// Base case
+		if (n == 0) {
+			return 1;
+		}
+		int fn = fact(n - 1);// sp
+		return fn * n;
+
+	}
 
 
+T(n) = T(n-1) + 1; //is recurrence relation ko solve karne ke kai tarike hote hai we are following substitution method
 
 
-
-
-
+-------------------------------------------------------------------
 
 
 

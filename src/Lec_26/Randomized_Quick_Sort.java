@@ -1,4 +1,5 @@
 package Lec_26;
+import java.util.Random;
 
 public class Randomized_Quick_Sort {
 // Quick Sort ka worst case tab hota hai jab partition har baar extremely unbalanced ho

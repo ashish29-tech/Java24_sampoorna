@@ -1,0 +1,79 @@
+java season 3
+we'll read oops, stack, queue, linkedlist, Tree
+
+
+Why chose to study java dsa ?
+secured hai, pointers nahi hote, garbage collection
+
+let's write c++ ka code
+//ye source code hai
+#include <iostream>
+using namespace std;
+int main(){
+	cout<<"Hello World!";
+}
+
+isko compiler ke through compile ho gya...
+ek .exe (executive file) file ban gya jise system samajhta hai...
+
+ye .exe file linux and mac pe nahi chalti...windows ✅ pe chal jayegi
+
+jab bhi ham share karte hai toh .exe file nahi dete...use ham .cpp dete hai mtlb source code dete hai
+Toh mtlb c++ platform dependent hai...c++ ke liye platform kya hai operating system...
+koi application ke liye platform kya hota hai browser 
+waise hi hame apna code chalane ke liye opeating system chahiye hota hai...jispe code compile kiya gya hai usi pe run hoga else nahi
+is term ko bolte hai platform independent bolte hai
+
+Now java ka program
+
+public static main{
+	public static void main(String args[]) {
+		System.out.println("Hello World!");
+	}
+}
+java ke program ko compile karenge toh .class file banegi naki .exe file...now jvm ke through .exe file banti hai and jvm run bhi karega isko
+and if we have all 3 machines(linux, mac, window) and when we share .class file toh we'll see ye sare machines pe chal jayega...yha compiler ne .class file
+bnai naki .exe. Isi .class file ko intermediate/byte code kehte hai...na ye source code hai na ye .exe file hai.
+Isse java ka execution time slow ho gya....
+java platform independent hoti hai but c++ se slow hoti hai. 
+
+-------------------------------------------------------------------------------------------
+JVM and JDK 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

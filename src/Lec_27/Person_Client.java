@@ -18,7 +18,7 @@ public class Person_Client {
 
 }
 
-// 2 points for constructor.....1st point is wrong....sabse pehle memory allocate hota hai then parsing then constructor chalta hai.
+// 2 points for constructor.....1st point is wrong....sabse pehle memory allocate hota hai jisse default value..like null ata hai... then parsing then constructor chalta hai.
 //1. Agr static chiz ko side rakh de toh....Person class ka object bna toh sabse pehle constructor hi chalta hai....
 //constructor ka kaam hota hai class ke data member ko initialize karna jisme ham chahte hai uske upar
 

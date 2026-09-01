@@ -20,6 +20,7 @@ public class Student_Client {
 		System.out.println(s.name); //2k address m null tha toh null aa jayega
 		System.out.println(s.age); // and isme 0
 		s.Intro_yourSelf(); //isse method chalega...Intro_yousrSelf m jo bhi likha tha wo pura statement chal jayega..My name is...
+//		s is reference variable....jis bhi reference variable ke sath . use kare toh uska address this keyword m ata hai
 		s.name = "Babu"; 
 		s.age = 18;
 		s.Intro_yourSelf();

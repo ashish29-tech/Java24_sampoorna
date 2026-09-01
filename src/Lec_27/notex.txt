@@ -35,10 +35,11 @@ java ke program ko compile karenge toh .class file banegi naki .exe file...now j
 and if we have all 3 machines(linux, mac, window) and when we share .class file toh we'll see ye sare machines pe chal jayega...yha compiler ne .class file
 bnai naki .exe. Isi .class file ko intermediate/byte code kehte hai...na ye source code hai na ye .exe file hai.
 Isse java ka execution time slow ho gya....
-java platform independent hoti hai but c++ se slow hoti hai. 
+java platform independent hoti hai but c++ se slow hota hai execution time.
 
 -------------------------------------------------------------------------------------------
 JVM and JDK 
+ 
 
 
 

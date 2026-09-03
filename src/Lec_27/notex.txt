@@ -47,6 +47,25 @@ JVM and JDK
 
 
 
+-------------------------------------------------------------------------------------
+
+Static keyword 2 kaam karta hai:
+1. Static variable bnane ke kaam ata hai...
+2. Static block bnane ke kaam ata hai...jab class load hota hai toh usi time sabse pehle static block chalta hai bhale...
+hi uske andar main method hi kyo na likha gya ho...usse bhi pehle static block chalta hai.
+
+Static function kyo nahi bnate ? 
+Agr koi function static ho gya toh sare object ke liye wo common mana jayega...
+
+Static function/block hai toh usme non-static wala variable/method ko call nahi kar sakte...
+But iske opposite wala kar sakte hai means non-static function/block hai toh usme static wala variable/method call kar sakte hai
+Do remember leetcode wala example...class solution bna hota hai....
+
+Constructor: Ka kaam hota hai class ke data member ko initialize karta hai...
+
+
+
+
 
 
 

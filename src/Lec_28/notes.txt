@@ -1,0 +1,5 @@
+Encapsulation: Class ke data member jo private ban jate hai ham unhe directly access nahi kar sakte
+agr unhe access karna hai toh mtlb kisi bhi data ko update krna ya data se value fetch karna....yahi pe 
+encapsulation ka concept ata hai ki data jo hai use function ke through bind kar diya jaye..method ke
+through bind kar diya jaye...data pe 2 hi chiz ho sakti hai yha fetch karna and second is data view karna
+toh function jo bna hai setter and getter is Encapsulation. 

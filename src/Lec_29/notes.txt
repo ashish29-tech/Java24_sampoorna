@@ -1,0 +1,28 @@
+Inheritance....
+Example given by Monu Bhaiya
+Onlin Payment karte hai and suppose UPI transaction m beech m OTP ka concept aa gya toh
+Kya wo purana code bekar ho gya ? No
+Purane code m changes nahi karenge aisa nahi hota production m...jo pehle se likha gya hai usme
+changes nahi kar sakte
+Purana code kaam ka hai ? Yes
+OTP wala feature hi toh add karna hai yaha pe ayega Inheritance ka concept
+OTP se pehle ka and baad ka sara feature same hai...
+Dobara code ek new file m copy nahi karenge...code ki duplicacy nahi badhate...
+Is code ko use karenge Inheritance ke through...Isme ek class ko parent class bna di jati hai
+and dusre ko child class...child ke pass pura right hota hai parents ki property access karne ka..
+but parent ke pass right nahi hai ki child ki property access kare...
+Jo pehle se phonePe/Paytm ki class bani thi wo banegi Parent class 
+Ek new class khud ka banayenge jisme OTP wala section leke ana hai and ye banega child class
+And child class inherit karega parent class ko..OTP wala code child likhega baki sara Parent class
+se le/inherit kar lega....direct access karenge...
+
+
+
+
+
+
+
+
+
+
+

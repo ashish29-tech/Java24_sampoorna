@@ -9,7 +9,8 @@ public class Stack {
 //	Data ko kha rakhenge ? Array m cuz Static bnana hai. ArrayList pe gaye toh dynamic ban jayega.
 //	Jaise student ek class thi uske data members kya the ? name, age, rollno
 //	Yha stack m data member hoga Array. And ise private banayenge cuz we don't want hamare array ko access kar ke kuch bhi value client change kar de.
-	private int [] arr;
+//	private int [] arr;
+	protected int [] arr; //ise protected bnayenge...lec-30 m protected register notes m likha hai	
 //	Array ke kis index pe data add karana ho wo ham decide karenge
 	private int idx = -1; //stack ko -1 se initialize kar rahe hai...queue 0 se le lenge.
 //	ham chahte hai array m address null na ho toh
@@ -35,6 +36,7 @@ public class Stack {
 	public int size() {
 		return idx+1;
 	}
+//	Jab dynamic bnayenge toh isme changes karne honge...mtlb jitna element chahe utna add kar sake
 	public void push(int item) throws Exception { //aage bhej denge Exception ko
 //		agr stack full ho gya toh apna exception generate karenge
 		if(isFull()) {

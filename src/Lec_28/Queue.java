@@ -7,12 +7,14 @@ public class Queue {
 //	Queue ko new nai kar sakte cuz Java m Queue class nahi hai java m. Queue ek interface hota hai.
 //	Queue bnane ke liye bhi kisi chiz ki jarurat hogi jaise Stack m hui thi...
 //	Yha bhi Array ki jarurat hogi queue bnane ke liye
-	private int[] arr; 
+//	private int[] arr; 
+	protected int[] arr; //isko protected banayenge cuz dynamic bnana hai...Lec_30 ke liye
 //	size batayega mere queue m kitne element add hai and kha pe add karna hai...ek hi variable se kaam chala rahe hai
 //	Linear queue bnate-bnate ise circular queue pe leke jana hai.
 	private int size = 0; //size batata hai: Queue mein currently kitne elements hain.
-	private int front = 0; //front batata hai: Abhi queue ka first element array ke kis index par hai.
-	
+//	private int front = 0; //front batata hai: Abhi queue ka first element array ke kis index par hai.
+//	front ko Lec_30 m access karne ke liye protected banana padega
+	protected int front = 0; //Dynamic queue ke liye kiya hamne protected taki Lec_30 m accessible ho
 //	Upar ek array hai and us array ko constructor ke through dono tarike se initialize kiya jaise stack m kiya tha
 	public Queue() {
 		this(5);

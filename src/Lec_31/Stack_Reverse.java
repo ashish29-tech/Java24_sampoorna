@@ -34,8 +34,8 @@ public class Stack_Reverse {
 			st.push(item);
 			return;
 		}
-		int x = st.pop();
-		Insert(st, item);
-		st.push(x);
+		int x = st.pop(); //top element nikalo 
+		Insert(st, item); //item ko recursively bottom mein daalo
+		st.push(x); //nikala hua element wapas daal do
 	}
 }

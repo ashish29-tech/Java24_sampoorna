@@ -6,8 +6,8 @@ public class Construct_Smallest_Number_From_DI_String {
 //	String ke form m no. ko return karna hai
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String s = "IIIDIDDD";
-		System.out.println(Smallest_Number_From_DI(s));
+		String s = "IIIDIDDD"; //s m Pattern store kar liya
+		System.out.println(Smallest_Number_From_DI(s)); // Function ko pattern diya
 	}
 //	return type string
 //	pehle array bna lete hai baad m concatinate kar ke bhej denge string ke format m
@@ -24,12 +24,12 @@ public class Construct_Smallest_Number_From_DI_String {
 //			yha deliberately ham stacks ka use karenge else ham ArrayList m data yaad, ya fir I ke baad 
 //			reverse loop laga denge jab tak D mile tab tak kaam karna hai, ya stacks m index yaad kar lo..
 //			reverse loop laga ke bhi kaam kar sakte the but stacks se kar rahe hai ham yha
-			if(i == s.length() || s.charAt(i)=='I') {
+			if(i == s.length() || s.charAt(i)=='I') { //Yahan 2 situations mein Stack empty kiya jayega
 				arr[i] = c; //current position par current smallest number dal diya
 				c++;
 //				agr koi D bacha hai toh uske liye kaam karna hai
 //				Jab tak Stack empty nahi hai, uske elements nikaalte raho.
-				
+//				!st.isEmpty() means Stack empty nahi hai
 				while(!st.isEmpty()) { //isEmpty ne true diya and ! laga hai toh false de dega and vice versa
 //					tab tak nikalo
 					arr[st.pop()] = c; //stack se pop karenge toh index milega uske corresponding c ko rakho

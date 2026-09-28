@@ -1,0 +1,110 @@
+LinkedList
+A Linked List is a linear data structure where elements (called nodes) are stored in
+separate memory locations and connected using references.
+
+Unlike an array, a linked list does not require contiguous memory.
+
+Collection of multiple nodes. 
+Iske baad jo topics padhenge that will be non-linear data structure/ advance data structure.
+
+Array hamara linear and contiguous data structure.
+LinkedList is linear and non-contiguous (non-continuous) data structure.
+
+In a linked list, nodes can be stored at different memory locations. Each node contains a reference to the next node.
+
+Jo kaam LinkedList se karana hai wo sara kaam Array se kar sakte hai.
+Sare questions LinkedLists ke Array se ho sakte hai.
+
+Singly Linked List mein hum generally Node naam ki class banate hain.
+jisme 2 main data members hote hain:
+
+class Node {
+    int val;       // data/value
+    Node next;     // next node ka reference
+}
+
+Node
+┌───────────────┐
+│ val   │ next  │
+└───────────────┘
+   10      ↓
+         next Node
+
+LinkedList ka pehle node ka address ko head kehte hai. And last node ko tail.
+
+Toh hame LinkedList bnana hoga toh class, class ke data member chahiye hoga, head, tail, size 
+
+Class kyun banayi ?
+Java mein agar hume apna khud ka data type banana hai, toh hum class bana sakte hain.
+
+Jaise Java mein already kuch data types hain:
+int
+double
+char
+String
+
+Lekin Java ko naturally ye nahi pata ki:
+"Mujhe ek aisa object chahiye jiske andar val bhi ho aur doosre Node ka reference bhi ho."
+
+Toh hum khud ek type bana dete hain:
+class Node {
+    int val;
+    Node next;
+}
+Ab Node hamara custom data type ban gaya.
+
+Ab Node ke objects bana sakte hain
+
+Node n1 = new Node();
+Node n2 = new Node();
+Node n3 = new Node();
+
+Ab:
+n1          n2          n3
+ ↓           ↓           ↓
+[   ]       [   ]       [   ]
+
+
+Hum values daal sakte hain:
+n1.val = 10;
+n2.val = 20;
+n3.val = 30;
+
+Aur connect:
+n1.next = n2;
+n2.next = n3;
+n3.next = null;
+
+Ab:
+n1
+ ↓
+[10 | •] ───→ [20 | •] ───→ [30 | null]
+                n2              n3
+Yahi Linked List hai.
+
+----------------------------------------------------------------
+
+Add 3 tarike se hota hai:
+Add first
+Add last
+Add index
+
+get:
+get first
+get last
+get at index
+
+Remove:
+Remove first
+Remove last
+Remove at index
+
+Display:
+
+
+
+
+
+
+
+

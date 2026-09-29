@@ -19,6 +19,8 @@ public class LinkedList_Client {
 		System.out.println(ll.getLast());
 		System.out.println(ll.getFirst());
 		System.out.println(ll.removefirst());
+		System.out.println(ll.removelast());
+		System.out.println(ll.removeatIndex(2));
 		ll.Display();
 	}
 

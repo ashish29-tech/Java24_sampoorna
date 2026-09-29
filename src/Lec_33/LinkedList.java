@@ -29,7 +29,6 @@ public void AddFirst(int item) {
 	if(size == 0) {
 		head = nn; //head bhi yahi banega
 		tail = nn; //tail bhi yahi banega
-		size++; //size 1 se badh jayega
 	}
 //	agr 1 se jyada node hai toh
 	else {
@@ -216,11 +215,12 @@ public void AddFirst(int item) {
 			size--;
 			return curr.val; //current ka data return kar do...
 		}
-		
-
-		
 	}
-
+//	LinkedList ka size ka function
+//	O(1) time complexity
+		public int size() {
+			return size;
+		}
 	
 	
 }

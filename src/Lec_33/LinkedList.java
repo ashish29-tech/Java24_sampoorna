@@ -41,7 +41,7 @@ public void AddFirst(int item) {
 	size++;
  }
 
-//	Jab aage-aage add kar rahe the toh Head change ho rha tha...
+// Jab aage-aage add kar rahe the toh Head change ho rha tha...
 // jab peeche add karenge toh tail pe asar ayega....
 // Iski TC bhi O(1)
 	public void AddLast(int item) {
@@ -60,6 +60,46 @@ public void AddFirst(int item) {
 			size++; //and size toh ++ hoga hi
 		}
 		
+	}
+	
+//	Add at particular Index
+//	Jis position pe add kar rahe hai usse pehle wale node pe change ayega
+//	jis index pe add kar rahe hai usse aage koi change nahi hua
+//	new node jo bna rahe hai usme changes aa rha hai....
+//	Time Complexity O(n) cuz loop lag rha hai GetNode ki wjah se...
+	public void AddatIndex(int item, int k) throws Exception { //try catch bhi laga sakte hai
+//		if k -ve hai and size se jyada hai toh...
+		if(k<0 || k>size) {
+//			exception throw kar do
+			throw new Exception("Bhai index range m de");
+		}
+//		agr shuru m add karna hua toh AddFirst chala denge
+//		Agar k = 0 hai, matlab bilkul beginning mein add karna hai.
+		if(k==0) {
+			AddFirst(item);
+		}
+//		aur agr last m add karna hua toh...size wala index mtlb last m add karna hai
+//		Agar current size 4 hai aur k = 4 hai: Index 4 par add karna matlab end mein add karna.
+		else if(k==size) {
+			AddLast(item); //Isliye AddLast() call kar diya.
+		}
+		else {
+//			Node bna do and data dal do
+			Node nn = new Node(); //
+			nn.val = item; //Nayi node ke val mein item ki value daal do.
+//			pehle previous node
+//			GetNode hame 1st index node ka address lake dega...suppose 2k
+//			Hum k = 2 par insert kar rahe hain. Toh k - 1 = 1
+//			GetNode(1) humein index 1 wali node ka address dega:
+			Node prev = GetNode(k-1);
+//			New node ko aage wali node se connect karo
+//			ab new node m...prev ka next likhenge....3k joki prev.next tha use nn.next m likh diya
+			nn.next = prev.next;
+//			Previous node ko new node se connect karo
+//			nn m jo 9k tha use prev.next m dalo
+			prev.next = nn; //previous ke next m new node ka address likhna hai
+			size++;
+		}
 	}
 	
 	
@@ -95,5 +135,19 @@ public void AddFirst(int item) {
 		System.out.println(".");
 	}
 
+//	GetFirst mtlb first node ka data...first node ka data mtlb head ka data
+//	O(1) time complexity
+	public int getFirst() {
+		return head.val;
+	}
+//	O(1) time complexity
+	public int getLast() {
+		return tail.val;
+	}
+//	O(n) time complexity
+	public int getatIndex(int k) {
+//		GetNode ko call kiya and ek index no. bheja wo ek address return karega
+		return GetNode(k).val;
+	}
 
 }

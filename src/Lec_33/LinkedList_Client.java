@@ -10,6 +10,7 @@ public class LinkedList_Client {
 		ll.AddFirst(30);
 		ll.AddFirst(40);
 		ll.AddFirst(50);
+		ll.AddFirst(120);
 		ll.Display();
 		ll.AddLast(8);
 		ll.AddLast(7);

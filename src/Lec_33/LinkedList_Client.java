@@ -18,6 +18,8 @@ public class LinkedList_Client {
 		System.out.println(ll.getatIndex(2));
 		System.out.println(ll.getLast());
 		System.out.println(ll.getFirst());
+		System.out.println(ll.removefirst());
+		ll.Display();
 	}
 
 }

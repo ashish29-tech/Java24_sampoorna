@@ -150,4 +150,77 @@ public void AddFirst(int item) {
 		return GetNode(k).val;
 	}
 
+//	----------------------------------------------------------------------
+//	Remove
+//	Remove First
+//	Iski time complexity O(1)
+	public int removefirst() {
+//		sabse pehle head yaad kar liya
+		Node temp = head;
+//		agr linkedlist ka size hi 1 hai and remove karenge toh head tail sab delete ho jayega
+		if(size == 1) {
+			head = null;
+			tail = null;
+			
+		}
+		else {
+//			head ko aage badhana hai
+			head = head.next;
+//			connection khtm karna hai toh temp joki 1st node pe hai use null karna hoga taki garbage collector utha ke le jaye
+			temp.next = null;
+		}
+		size--;
+//		jis node ko delte kiya uska address yaad kiya tha uska data yha se return kar dete hai
+		return temp.val;
+	}
+	
+//	Remove Last
+//	O(n) time complexity cuz GetNode wala loop chal rha hai...
+	public int removelast() {
+		if(size == 1) {
+			return removefirst(); //size 1 hai toh remove first karenge
+		}
+		else {
+//			2nd last node ka address chahiye hoga
+			Node prev = GetNode(size-2); //last wala size-1 hoga toh 2nd last node size-2 hoga...
+//			tail hame previous(2nd last node) pe lana hai....toh tail ka data yaad kar lenge 
+			int val = tail.val;
+			tail = prev; //tail and prev ek hi hai jgah pe hai ab...
+//			tail(joki ab 2nd last node hai) m next m koi address toh hota nahi toh use null kar diya
+			tail.next = null; //tail ke next ko null kar diya
+			size--; //ek node kam ho gya toh size-- kar diya 
+			return val; //jo 50 last wale node ka data yaad kiya toh wo return kar denge 
+		}
+	}
+	
+//	Remove at Index
+	public int removeatIndex(int k) throws Exception{
+		if(k<0 || k>= size) {
+			throw new Exception("Bhai index range m de");
+		}
+//		agr k = 0 hai toh mtlb removefirst
+		if(k==0) {
+			return removefirst();
+		}
+		else if(k == size-1) { // k ki value size-1 hai toh mtlb remove last
+			return removelast();
+		}
+		else {
+//		previous node bhi chahiye and current node bhi chahiye
+			Node prev = GetNode(k-1);
+			Node curr = GetNode(k);
+//			previous ke next m current ke next ka address 
+			prev.next = curr.next; //isse ab previous node bhi usi node ko point kar rahi hogi joki current node point kar rha hai
+//			ab jis node ko remove karna hai uska connection bhi toh todna hoga
+			curr.next = null; //current ke next ko null kar do....
+			size--;
+			return curr.val; //current ka data return kar do...
+		}
+		
+
+		
+	}
+
+	
+	
 }

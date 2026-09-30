@@ -2,8 +2,9 @@ package Lec_33;
 
 //🧠 Shortcut
 //Tail → Head = Circular ......Tail ka next m head hai toh circular LinkedList
-//Tail → Any previous node = Cyclic .....Tail ke next m koi bhi previous node hai toh LinkedList
+//Tail → Any previous node = Cyclic .....Tail ke next m koi bhi previous node hai toh cyclic LinkedList
 //Tail → null = Normal ....Tail ne next m null hai toh no cycle
+// Floyd cycle Detection algorithm or Tortoise and Hare algorithm
 public class Linked_List_Cycle {
 //https://leetcode.com/problems/linked-list-cycle/description/
 //	Ek tarika hai middle node nikalte hai...agr fast null pe chala gya toh mtlb loop se bahar aa gaye...toh cycle nahi hai

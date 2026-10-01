@@ -1,5 +1,8 @@
 package Lec_34;
 // https://leetcode.com/problems/reverse-linked-list/description/
+//	O(n) Time Complexity
+
+// Tips: Picture bna ke answer dekh lo kaise change ho rha hai....toh code likh loge
 public class Reverse_Linked_List {
 	
 	  public class ListNode {

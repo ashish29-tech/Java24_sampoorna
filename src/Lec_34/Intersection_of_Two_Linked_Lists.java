@@ -10,7 +10,8 @@ public class Intersection_of_Two_Linked_Lists {
 //	Pehle b1 ko fix karenge...and a1 se c3 tak pura check karenge...intersection mila ki nahi
 //	then b1 ko 1 aage badha ke b2 pe layenge and dobara a1 se c3 tak pura check karenge...
 //	mtlb b wala loop outer m hoga and a wala loop outer m hoga....
-//	But hame bina length nikale... O(n) m karna hai
+//	But hame bina length nikale... O(n) m karna hai....
+//	length nikal ke karte toh bhi O(n) hi ata but yha bina length nikale kiya toh no. of lines of code kam likhna pada
 		// TODO Auto-generated method stub
 //		  Definition for singly-linked list.
 		  public class ListNode {

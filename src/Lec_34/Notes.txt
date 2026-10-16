@@ -1,0 +1,49 @@
+Below are notes from Lec-34....video ke last ke 12-13 minutes ke.
+
+
+
+Push O(1) m hota hai…LIFO
+
+Pop O(1) m hota hai…. LIFO
+
+Queue m linkedlist se karna hoga toh kya-kya  operation perform karna hoga ?
+
+10-20-30 linkedlist
+
+stack m
+
+30
+
+20
+
+10 //sabse pehle 10 
+
+Ab agr stack bna rahe hai and addLast kiya hai toh removeLast hi karna padega…taki 30 sabse pehle nikle…stack m se.
+
+But agr addLast and removeLast ki help se stack banne lag gaye toh push ki complexity O(1) hogi
+
+but pop ki complexity O(1) jayegi…cuz removeLast ki complexity O(N) hoti hai 
+
+Toh is case m ham addFirst and removeFirst karenge…aage-aage linkedList m add karenge….30-20-10
+
+addFirst jana jayega push naam se and removeFirst mana jayega pop naam se…
+
+Jab bhi hame stack bnana ho toh kya use karenge ? LinkedList lenge usme addFirst karenge toh us operation ko push keh denge and removeFirst karenge toh use pop keh denge 
+
+Toh if interviewer ask ki addLast and removeFirst se kyo nahi kiya..isse bhi toh order maintain ho raha hai toh answer dena hai ki isme pop ki complexity O(N) ja rahi hai and addFirst and removeFirst wale tarike se dono ki complexity O(1) aa rahi hai…
+
+Stack m kabhi use nahi ata…
+
+Generally queue m use ata hai…
+
+Queue hota hai FIFO
+
+Ham peeche peeche add karenge and aage se data remove karenge toh ye Queue wala nature aa jayega…addLast and removeFirst se Queue hoga.
+
+10→20→30→40 
+
+toh addLast ki TC O(1) and removeFirst ki O(1)
+
+Isse queue maintain ho jayega…
+
+And Queue ke liye hi LinkedList jana jata hai…Queue m bhar-bhar ke use hota hai

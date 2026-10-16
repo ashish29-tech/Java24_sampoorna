@@ -1,6 +1,7 @@
 package Lec_34;
 
 import java.util.LinkedList;
+//LinkedList internally doubly linked list use karti hai.
 //Tere kaam ki baat:
 //LinkedList ko Queue ki tarah use kar sakta hai.
 //Queue<Integer> q = new LinkedList<>();
@@ -20,28 +21,47 @@ import java.util.LinkedList;
 // LinkedList ki help se stack and queue dono banta hai
 public class LinkedList_Java {
 	public static void main(String[] args) {
-//	 	Ye Java wala hai
-//		suppose integer ka linkedlist bna rahe hai 
+////	 	Ye Java wala hai
+////		suppose integer ka linkedlist bna rahe hai 
+//		LinkedList<Integer> ll = new LinkedList<>();
+//		ll.add(10); //ye add last ki trah kaam karega
+//		ll.add(20);
+//		ll.add(30);
+//		ll.add(40);
+//		ll.add(50);
+////		add first karna ho toh...add first naam ka method hota hai
+//		ll.addFirst(90); //addFirst ki time complexity O(1)
+////		addLast bhi O(1)
+////		kisi index pe add karna ho toh kar sakte hai
+//		ll.add(1, -11); //index no. pass karenge and sath m value pass karo....O(N)
+//		System.out.println(ll); //print karenge toh dikhega ki element piche-piche add hote ja rahe hai
+////		kya isme for each loop lag sakta hai ? Yess
+//		for(int val : ll) {
+//			System.out.print(val+" ");
+//		}
+//		System.out.println();
+//		System.out.println();
+//		System.out.println(ll.get(2)); // Index 2 ka element.... Time complexity: O(n)
+//		System.out.println(ll.getFirst());// First element...O(1)
+//		System.out.println(ll.getLast()); // Last element...O(1)
+//		System.out.println(ll.remove()); //remove first....O(1)
+//		System.out.println(ll.remove(2)); //index no. pass kar ke remove
+//		System.out.println(ll.removeLast());//O(N) 
+//		System.out.println(ll);
+		
+//		Agr upar wala sab comment kar de 
+//		Queue ke liye hi LinkedList jana jata hai...
+//		Queue m bhar-bhar ke use hota hai
+//		Agr Queue ki trah behave karana hai toh...
 		LinkedList<Integer> ll = new LinkedList<>();
-		ll.add(10); //ye add last ki trah kaam karega
+		ll.add(10); //Queue m enqueue operation jana jayega ye
 		ll.add(20);
 		ll.add(30);
 		ll.add(40);
-		ll.add(50);
-//		add first karna ho toh...add first naam ka method hota hai
-		ll.addFirst(90); //addFirst ki time complexity O(1)
-//		addLast bhi O(1)
-//		kisi index pe add karna ho toh kar sakte hai
-		ll.add(1, -11); //index no. pass karenge and sath m value pass karo....O(N)
-		System.out.println(ll); //print karenge toh dikhega ki element piche-piche add hote ja rahe hai
-//		kya isme for each loop lag sakta hai ? Yess
-		for(int val : ll) {
-			System.out.print(val+" ");
-		}
-		System.out.println();
-		System.out.println(ll.get(2)); // Index 2 ka element.... Time complexity: O(n)
-		System.out.println(ll.getFirst());// First element...O(1)
-		System.out.println(ll.getLast()); // Last element...O(1)
+//		Remove karna hai toh
+//		Ye remove first ho gya...Ye queue ban gya
+		System.out.println(ll.remove()); //
+		
 	}
 
 }

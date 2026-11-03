@@ -168,6 +168,28 @@ public class Binary_Tree {
 //		agr upar check laga rahe hai toh yha sirf right return karenge or condition ki jarurat nai hai
 		return left || right; //or kar ke check karenge
 	}
+	
+//	Tree ki height
+//	Single node hai tree m toh uski height 0 ya 1 ? Dono hi shi hai..depend karta hai ham kya maan ke chal rahe hai...
+//	single node ki height ham 0 man ke chal rahe hai...
+//	Left subtree and Right subtree ki height recursion se manga lenge and in dono ka max leke usme + 1(root node) kar denge toh height aa jayegi tree ki.
+//	
+	public int ht() {
+		return ht(root);
+	}
+	
+	private int ht(Node node) { //variable ka naam 'node'
+		if(node == null) {
+//			0 nai return kar sakte cuz...gpt kar ke read about this
+//			jab single node ki height 1 lenge toh base case m return 0 kar sakte hai
+			return -1; //single node ki height 0 le rahe hai toh -1 return karna padega 
+		}
+		
+		int lh = ht(node.left);
+		int rh = ht(node.right);
+//		left subtree and right subtree ka max return karenge and usme + 1 karenge toh tree ki height
+		return Math.max(lh, rh)+1;
+	}
 }
 
 

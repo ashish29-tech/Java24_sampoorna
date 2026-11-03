@@ -106,6 +106,34 @@ public class Binary_Tree {
 //		toh .<--30-->70 ab 30 ke left ka call...null hai toh wapis and ab 30 ke right ka call lagega...70 ke left, right m koi nai hai toh null .<--70-->. 
 		Display(nn.right);
 	}
+	
+//	Binary tree ke andar max val/node kya hai ye pta karna hai
+//	Tree m kuch bhi karna hoga uske liye root chahiye hoga
+//	Jaise display ke liye kaam kiya hai waise hi kaam karenge
+	public int max() { //user ise call karega and ye internally niche private wala call karega
+		return max(root);
+	}
+//	jaise array m maximum nikalte the waise hi tree m bhi maximum nikalenge
+//	jaise array m searching hota tha waise hi tree m bhi karenge
+	private int max(Node nn) {
+//		base case
+		if(nn==null) {
+			return Integer.MIN_VALUE;
+		}
+		
+//	   left subtree ka max pta kar lo and right subtree ka max pta kar lo and root ki value...
+//		in teeno m se jo maximum hoga wo hamara answer hoga
+//		ye left subtree ka max and right subtree ka max btana recursion kar ke dega
+//		toh hamara kaam sirf hoga root ke value se compare karna
+//		
+//		agr recursion left max lake de dega
+		int left_max = max(nn.left); //left ka address pass kar denge
+		int right_max = max(nn.right); //right ka address pass kar denge
+//		hamara kaam hoga in teen data ka max compare karna
+//		hamar data and left and right m se jo max ayega usse comparison
+		return Math.max(nn.val, Math.max(left_max, right_max)); 
+		
+	}
 }
 
 

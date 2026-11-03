@@ -3,6 +3,7 @@ import java.util.*;
 
 public class Binary_Tree {
 //	10T20T40FFT50T60FFFT30FT70FF
+//	10 true 20 true 40 false false true 50 false false true 30 false true 60 true 70 false false false
 //	Just like LinkedList m node class hoti thi..usme ke data hota tha...
 	class Node{
 		int val;
@@ -133,6 +134,39 @@ public class Binary_Tree {
 //		hamar data and left and right m se jo max ayega usse comparison
 		return Math.max(nn.val, Math.max(left_max, right_max)); 
 		
+	}
+	
+//	Tree m searching ke liye upar jaise method bnaya hai waise hi bnayenge
+//	boolean type...ki true ya false...data hai ya nahi
+//	user 45 bhejega toh ye wala method chalega and isme internally private search wala method chalega
+	public boolean search(int item) { //jo data search karna hai wo paas kar denge
+		return search(root, item);
+	}
+	
+	private boolean search(Node nn, int item) {
+//		pura array search kar liya and data nahi mila toh 
+//		root se check karenge ki match kar rha hai ya nahi...agr nahi match kiya toh
+//		left and right subtree bacha...in dono pe check karna hoga toh recursion se karwayenge
+//		left or right m se kisi m se bhi true aya toh answer true 
+//		jab dhundte duhundte null mil jaye toh mtlb nahi hai data
+		if(nn==null) {
+			return false;
+		}
+//		ham jha hai agr wahi value item ke barabar ho gyi toh
+		if(nn.val==item) {
+			return true;
+		}
+//		yha pe koi bhi call pehle laga sakte hai..left ya right...order matter nai karta yha
+//		agr aisa nahi hai toh...left wale m mila kya
+		boolean left = search(nn.left, item);
+//		yha check bhi laga sakte hai ki agr left m mil gya toh wahi se return 
+//		if(left) {
+//			return left;
+//		}
+//		ya right wale m
+		boolean right = search(nn.right, item);
+//		agr upar check laga rahe hai toh yha sirf right return karenge or condition ki jarurat nai hai
+		return left || right; //or kar ke check karenge
 	}
 }
 

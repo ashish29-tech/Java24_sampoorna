@@ -11,6 +11,8 @@ public class Binary_Tree_Client {
 		bt.Display(); //ye error show karega...nn pe. Root private hai. Toh root paas nai kar sakte. Root ko public bhi nai bna sakte cuz koi bhi fir root ko null kar dega toh tree khtm ho jayega
 //		user wo maximum call karega jisme argument na ho
 		System.out.println(bt.max());
+//		yha user check karega ki bt m 45 hai ya nahi
+		System.out.println(bt.search(45));
 	}
 
 }

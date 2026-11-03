@@ -1,0 +1,124 @@
+Tree is a non-linear data structure in Java DSA.
+A Tree is a hierarchical data structure consisting of nodes connected by edges. It represents 
+data in a parent-child relationship.
+Why is a Tree non-linear?
+A tree is called non-linear because:
+Data is not arranged sequentially in a single line.
+One node can connect to multiple child nodes.
+Data follows a hierarchical structure.
+Traversal can follow different paths.
+
+Linear vs. Non-linear data structures
+Linear:
+Array
+Linked List
+Stack
+Queue
+
+Non-linear:
+Tree
+Graph
+
+
+Types of Trees in Java DSA
+Binary Tree: Each node has at most two children.
+Binary Search Tree (BST): Left subtree values are smaller and right subtree values 
+are larger than the node, under the usual distinct-key convention.
+AVL Tree: A self-balancing binary search tree.
+Heap: A tree-based structure used in priority queues.
+
+
+Tree se agr question ata hai toh Binary Tree and Binary Search Tree se question ayega sabse jyada.
+Prefix Tree and Generic Tree...we'll read these in Trie. But theoretically we'll read about Generic
+Tree right in this lecture. 
+We will use tree where heirarchy needs to be maintained.
+
+
+Tree ke pehle node ko root kehte hai. 
+
+Generic tree m child ki limitation nahi hoti. Jitne marji utne child ho sakte hai.
+
+Binary Tree and Binary Search Tree m kisi bhi node ke at max 2 child ho sakte hai.
+
+BT m jaise marzi waise data rakh lo. But BST m ek particular order m data rakhte hai.
+
+Implementation of BT...Just like LinkedList m node class hoti thi..usme ke data hota tha...
+int val...waise hi yha bhi ek data hoga...LinkedList m ek hi address rakhte the jo agle node 
+ko point kare. Yha hame 2 address rakhna padega...ek ka naam left hoga and ek ka right.
+Left and Right..dono ka type hoga node. 
+Jaise LinkedList m head hota tha waise hi Tree m ek root hoga.
+Toh hame ek class bnana padega...2 variable honge..left and right. 
+LinkedList m 1 ka address yaad karna hota tha..yha 1 se jyada address yaad karna hota hai.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------
+We are starting Advance data structure from here. Tree, Heap, Map, Graph.
+Do remember DP us not a data structure. It's an algo.
+
+Doubly LinkedList ke liye...ek aur pointer bna lo node class ke andar. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

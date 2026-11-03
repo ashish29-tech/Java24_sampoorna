@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Is_Armstrong_Number {
 
 	//https://codeskiller.codingblocks.com/problems/1102  .....coding block
+//	153, 370, 371, 407, 1634, 8208, 9474
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
@@ -13,9 +14,9 @@ public class Is_Armstrong_Number {
 	//function bnayenge jo check karega armstrong number
 	//return type boolean rakhenge toh main m result print karenge and if void rakhene toh isi func m print karna padega
 	public static boolean Is_Armstrong(int n) {
-		int c = Countofdigit(n); //4 aa gya niche wale function se
+		int c = Countofdigit(n); //4 aa gya niche Countofdigit wale function se....1634 ka. Ab har digit ki power 4 calculate hogi, kyunki c = 4 hai.
 		int sum = 0;
-		int p = n; //yaad kar liya 371(n) ko
+		int p = n; //yaad kar liya 371(n) ko p m
 		while(n>0) {
 			int rem = n%10;
 			//Math.pow ka return type double hota hai...and hame integer m rakhna hai toh typecasting karenge

@@ -3,6 +3,11 @@ package Lec_6;
 import java.util.Scanner;
 
 public class Odd_Even_BackInDelhi {
+//	Due to an immense rise in Pollution, Kejriwal is back with the Odd and Even Rule in Delhi. 
+//	The scheme is as follows, each car will be allowed to run on Sunday if the sum of digits 
+//	which are even is divisible by 4 or sum of digits which are odd in that number is divisible by 3. 
+//	However to check every car for the above criteria can’t be done by the Delhi Police. 
+//	You need to help Delhi Police by finding out if a car numbered N will be allowed to run on Sunday?
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -34,6 +39,9 @@ public class Odd_Even_BackInDelhi {
 			}
 			n=n/10;
 		}
+//		evensum % 4 == 0 → even digits ka sum 4 se completely divisible hai?
+//		oddsum % 3 == 0 → odd digits ka sum 3 se completely divisible hai?
+//		|| → dono mein se koi ek condition true hui, toh "Yes" print hoga.
 		if(evensum%4==0 || oddsum%3==0) {
 			System.out.println("Yes");
 		}

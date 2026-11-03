@@ -1,7 +1,15 @@
 package Lec_6;
 import java.util.*;
 public class Boston_number {
-
+//	A Boston Number is a composite number whose sum of digits equals the sum of digits of all 
+//	its prime factors, counting repeated factors.
+//	Example
+//	Number: 22
+//	Sum of digits of 22 = 2 + 2 = 4
+//	Prime factors of 22 = 2 × 11
+//	Sum of digits of prime factors = 2 + 1 + 1 = 4
+	
+//	Tumhare Boston Number code ki Time Complexity = O(n) hai.
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
@@ -9,6 +17,7 @@ public class Boston_number {
 		System.out.println(IsBostonNum(n));
 		
 	}
+//	Iski Time complexity O(n)
 	public static int IsBostonNum(int n) {
 		//sum nikal ke yaad kar lete hai...378 ka. Niche function m sum nikala and store kar liya 
 //		int sum_digit = Sumofdigit(22) then Sumofdigit(22) executes and return 4. so sum_digit m 4 aa jayega
@@ -36,9 +45,10 @@ public class Boston_number {
 		}
 		
 	}
-	
-	
 //	sabse pehle sum of digit chahiye
+//	Sumofdigit(n) ki complexity : Har iteration mein n ko 10 se divide kar rahe ho.
+//	Agar number n hai, toh digits ki count approximately log10n
+//	Time Complexity: O(logn)
 	public static int Sumofdigit(int n) {
 		int sum = 0;
 		while(n>0) { //22>0 then 2 >0

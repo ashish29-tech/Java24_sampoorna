@@ -9,9 +9,12 @@ public class Array_Swap_1 {
 		System.out.println(arr[0]+ " " +arr[1]); //10, 20
 //		System.out.println(arr[0] + arr[1]);
 //		Method ko values pass hui hain, array nahi
+//		values ki copies pass hoti hain.
 		Swap(arr[0], arr[1]); //array ka 0th and 1st index ka content pass hua hai
+//		Swap(arr, 0, 1); //→ array ka reference aur indexes pass hote hain, toh method original array ke elements modify kar sakta hai.
 		System.out.println(arr[0] + " " + arr[1]);
 	}
+//	Method khatam hote hi a, b aur temp local variables ka scope end ho jaata hai. Original array ab bhi same hai. 
 	public static void Swap(int a, int b) { // and yha content aa gya...int a m 10 and int b m 20
 //		yha changes toh hue hai but a and b naam ke local variable m hue hai ...na ki arr m 
 //		Java me pass by value hota hai, isliye original array ke elements change nahi hote.

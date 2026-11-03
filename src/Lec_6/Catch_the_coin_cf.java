@@ -7,7 +7,7 @@ public class Catch_the_coin_cf {
 //	Player speed = 1 step/sec
 //	Coin fall speed = 1 step/sec
 //	toh player jitna move karega coin utna hi niche girta rahega
-
+//	https://youtu.be/mVeZRYE2jgU
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
@@ -23,7 +23,8 @@ public class Catch_the_coin_cf {
 		else {
 			System.out.println("YES"); // coin reachable hai toh Yes
 		}
+//		Har test case complete hone ke baad n ko 1 se decrease kar dete hain.
 		n--; //Ek test complete toh count reduce
-	}
-	}
+	 }
+  }
 }

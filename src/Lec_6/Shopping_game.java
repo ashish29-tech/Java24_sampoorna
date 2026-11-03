@@ -3,7 +3,7 @@ package Lec_6;
 import java.util.Scanner;
 
 public class Shopping_game {
-
+// https://codeskiller.codingblocks.com/problems/696
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in); // User input lene ke liye Scanner object banaya.

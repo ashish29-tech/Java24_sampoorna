@@ -1,0 +1,30 @@
+Maan lo input hai 4545.
+
+Java mein:
+long rem = n % 10;
+
+
+% 10 se last digit milta hai.
+4545 % 10 = 5
+454 % 10  = 4
+45 % 10   = 5
+4 % 10    = 4
+
+
+Aur:
+n = n / 10;
+
+
+Number ki last digit hata deta hai, kyunki long division mein decimal part discard ho jaata hai.
+4545 / 10 = 454
+454 / 10  = 45
+45 / 10   = 4
+
+
+
+
+
+
+
+
+

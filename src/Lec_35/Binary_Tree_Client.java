@@ -14,6 +14,8 @@ public class Binary_Tree_Client {
 //		yha user check karega ki bt m 45, 20 hai ya nahi
 		System.out.println(bt.search(20));
 		System.out.println(bt.ht());
+		bt.PreOrder();
+		bt.INOrder();
 	}
 
 }

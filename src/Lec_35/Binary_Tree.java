@@ -20,12 +20,13 @@ public class Binary_Tree {
 //	jab constructor chalega toh indirectly CreateTree naam ka method chalega...toh 
 //	pure tree ko create kar ke root m root ka address assign kar dega....
 //	1st tree ke 1st node ka address assign kar dega...root pe
-		root = CreateTree();
+		root = CreateTree(); //Is ek line mein poora tree create ho raha hai.
 	}
 //	Iska kaam hai tree ko create karwa dena...create kara ke pehle noda ka jo pehle address hoga
 //	use root pe assign kar denge....
 //	Create tree karna hai toh tree ke andar input chahiye hoga..mtlb data chahiye hoga na
 //	Just like recursion we need to first think about the 1st step.
+//	Is method ka return type Node hai. Kyunki ye method ek node create karega aur uska address return karega.
 	private Node CreateTree() {
 //		sabse pehle wo input lo jo root banega mera
 		int item = sc.nextInt();
@@ -37,7 +38,7 @@ public class Binary_Tree {
 		boolean hlc = sc.nextBoolean();
 //		agr left child exist karega...toh recursion ko kahenge
 //		ek left branch create kar aur mere left m laga de
-		if(hlc) {
+		if(hlc) { //Agar hai toh recursion se Left Subtree create karo
 			nn.left = CreateTree(); //left branch ka call laga diya
 		}
 //		if right child hai
@@ -100,6 +101,9 @@ public class Binary_Tree {
 		System.out.println(s); //20<--10-->30 print ho jayega
 //		ab recucrsion kaam karega...
 //		left branch ko print kar de...toh .left
+//		Pehle Left Subtree print hoga, phir Right Subtree.
+//		Is traversal ko Preorder Traversal (NLR) kehte hain.
+//		N = Node, L = Left, R = Right.
 		Display(nn.left); //left branch ka address chala jayega... toh 40<--20-->50 print karega and .<--40-->. bhi
 //		right branch ka address chala jayega...60<--50-->. then .<--60-->.  
 //		then right ka chalega and null hai toh wapis...so finally 10 pe jayenge...
@@ -118,6 +122,7 @@ public class Binary_Tree {
 //	jaise array m searching hota tha waise hi tree m bhi karenge
 	private int max(Node nn) {
 //		base case
+//		
 		if(nn==null) {
 			return Integer.MIN_VALUE;
 		}
@@ -184,11 +189,41 @@ public class Binary_Tree {
 //			jab single node ki height 1 lenge toh base case m return 0 kar sakte hai
 			return -1; //single node ki height 0 le rahe hai toh -1 return karna padega 
 		}
-		
+//		Recursion se Left Subtree aur Right Subtree ki height mangwa li.
 		int lh = ht(node.left);
 		int rh = ht(node.right);
 //		left subtree and right subtree ka max return karenge and usme + 1 karenge toh tree ki height
 		return Math.max(lh, rh)+1;
+	}
+//	we have 4 traversal: pre order, post order, In order, Level order
+	public void PreOrder() {
+		PreOrder(root);
+		System.out.println();
+	}
+//		Tree traversal karna hai toh private bnayenge 
+	private void PreOrder(Node nn) {
+//		null pe chale gaye toh
+		if(nn==null) {
+			return;
+		}
+//		root print kar denge
+		System.out.print(nn.val+" ");
+//		left and right ka call lagayenge
+		PreOrder(nn.left);
+		PreOrder(nn.right);
+	}
+//	InOrder traversal
+	public void INOrder() {
+		INOrder(root);
+		System.out.println();
+	}
+	private void INOrder(Node nn) {
+		if(nn == null) {
+			return;
+		}
+		INOrder(nn.left);
+		System.out.print(nn.val+" ");
+		INOrder(nn.right);
 	}
 }
 

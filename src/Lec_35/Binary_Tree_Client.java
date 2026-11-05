@@ -17,6 +17,6 @@ public class Binary_Tree_Client {
 		bt.PreOrder();
 		bt.INOrder();
 		bt.PostOrder();
+		bt.levelOrder();
 	}
-
 }

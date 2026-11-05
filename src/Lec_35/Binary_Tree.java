@@ -2,6 +2,7 @@ package Lec_35;
 import java.util.*;
 
 public class Binary_Tree {
+//	Jitne bhi questions kiye hai niche sabki complexity O(N) cuz har node pe ek-ek baar hi ja rahe hai.
 //	10T20T40FFT50T60FFFT30FT70FF
 //	10 true 20 true 40 false false true 50 false false true 30 false true 60 true 70 false false false
 //	Just like LinkedList m node class hoti thi..usme ke data hota tha...
@@ -244,8 +245,34 @@ public class Binary_Tree {
 		PostOrder(nn.right);
 		System.out.print(nn.val + " ");
 	}
+//	Level Order Traversal....we need data level by level
+//	Data ko line m arrange karna hai and line m arrange karne ke liye we have Queue Data Structure
+//	Tree m level order ka question aye toh first think about solving question using Queue.
+//	Steps: Remove, print, left child add, right child add....do these steps until queue gets empty.
+	public void levelOrder() {
+//		Queue m node jaisa address dalna hai...and LinkedList ko new karenge cuz Queue interface hota hai.
+		Queue<Node>q = new LinkedList<>();
+//		queue m root ka address dal denge
+		q.add(root); //add last karega
+//		jab tak queue khali na ho
+		while(!q.isEmpty()) {
+//			sabse pehle ek node nikalenge
+//			q.poll remove first karega jisse queue ka nature aa jayega...linkedlist ke andar
+			Node n = q.poll(); //q.poll ya fir remove kar sakte hai....dono remove first hi karta hai
+//			pehle ye node ka data print karo
+			System.out.print(n.val+" ");
+//			left m koi address hai toh check karo...mtlb null nai hona chahiye
+			if(n.left!=null) {
+//				nai hai null toh jo address rakha hai left m wo add kar do
+				q.add(n.left);
+			}
+			if(n.right!=null) {
+				q.add(n.right);
+			}
+		}
+		System.out.println();
+	}
 }
-
 
 
 

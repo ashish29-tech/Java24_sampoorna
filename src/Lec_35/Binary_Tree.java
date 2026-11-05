@@ -213,6 +213,8 @@ public class Binary_Tree {
 		PreOrder(nn.right);
 	}
 //	InOrder traversal
+//	Left Root Right
+//	Code likhte time print statement beech m rakh denge
 	public void INOrder() {
 		INOrder(root);
 		System.out.println();
@@ -224,6 +226,23 @@ public class Binary_Tree {
 		INOrder(nn.left);
 		System.out.print(nn.val+" ");
 		INOrder(nn.right);
+	}
+//	PostOrder traversal
+//	Left Right Root
+//	Recursive calls pehle and last m print statement
+	public void PostOrder() {
+		PostOrder(root);
+		System.out.println();
+	}
+	
+	private void PostOrder(Node nn) {
+		if(nn == null) {
+			return;
+		}
+		
+		PostOrder(nn.left);
+		PostOrder(nn.right);
+		System.out.print(nn.val + " ");
 	}
 }
 

@@ -50,7 +50,7 @@ public class Symmetric_Tree {
 //		    	2 tree exactly same hai ya nai uska logic/code....
 //		    	Upar ke teeno if wali condition same rahegi
 //		    	boolean left = isMirror(root1.left, root2.left); //left ko left sa compare karenge
-//		    	boolean right = isMirror(root1.right, root2.roght); //right ko right se compare karenge
+//		    	boolean right = isMirror(root1.right, root2.right); //right ko right se compare karenge
 //		    	return left && right;
 		    	
 //		    	And 2 tree ka structure same hai ya nai uske liye
